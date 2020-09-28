@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { signup, isAuth } from '../../actions/auth';
+import styles from '../../components/Main.module.scss';
+import classnames from 'classnames';
 
 const SignupComponent = () => {
   const [values, setValues] = useState({
@@ -55,38 +57,43 @@ const SignupComponent = () => {
 
   const signupForm = () => {
     return (
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input
-            value={name}
-            onChange={handleChange('name')}
-            type="text"
-            className="form-control"
-            placeholder="Type your name"
-          />
-        </div>
-        <div className="form-group">
-          <input
-            value={email}
-            onChange={handleChange('email')}
-            type="email"
-            className="form-control"
-            placeholder="Type your email"
-          />
-        </div>
-        <div className="form-group">
-          <input
-            value={password}
-            onChange={handleChange('password')}
-            type="password"
-            className="form-control"
-            placeholder="Type your password"
-          />
-        </div>
+      <div className={classnames('card px-5 py-5 bg-light', styles.box)}>
         <div>
-          <button className="btn btn-primary">Submit</button>
+          <h2 className="section-title">Sign Up</h2>
         </div>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <input
+              value={name}
+              onChange={handleChange('name')}
+              type="text"
+              className="form-control"
+              placeholder="Type your name"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              value={email}
+              onChange={handleChange('email')}
+              type="email"
+              className="form-control"
+              placeholder="Type your email"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              value={password}
+              onChange={handleChange('password')}
+              type="password"
+              className="form-control"
+              placeholder="Type your password"
+            />
+          </div>
+          <div className="text-center">
+            <button className="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
     );
   };
   return (
