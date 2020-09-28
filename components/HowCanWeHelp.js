@@ -14,10 +14,24 @@ const HowCanWeHelp = () => {
         </p>
         <div className={classnames(styles.specials)}>
           <div>
-            <div>
-              <img src="https://via.placeholder.com/468x400?text=Flat Roof" />
+            <div className={classnames(styles.imgFrame)}>
+              <img
+                src="/images/roof-installation-monier.jpg"
+                alt="Roof installation"
+              />
             </div>
-            <h3>Flat Roofs</h3>
+            <h3>Roof Installation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              venenatis odio auctor tortor venenatis, quis fermentum eros
+              iaculis.
+            </p>
+          </div>
+          <div>
+            <div className={classnames(styles.imgFrame)}>
+              <img src="/images/membrane.jpg" alt="membrane" />
+            </div>
+            <h3>Membrane Installation</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis odio auctor tortor venenatis, quis fermentum eros
@@ -26,18 +40,10 @@ const HowCanWeHelp = () => {
           </div>
           <div>
             <div>
-              <img src="https://via.placeholder.com/468x400?text=Commercial Roofing" />
-            </div>
-            <h3>Commercial Roofing</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              venenatis odio auctor tortor venenatis, quis fermentum eros
-              iaculis.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/468x400?text=Gutter Replacement" />
+              <img
+                src="/images/gutters-installation.jpg"
+                alt="gutters installation"
+              />
             </div>
             <h3>Gutter Replacement</h3>
             <p>
@@ -48,7 +54,10 @@ const HowCanWeHelp = () => {
           </div>
           <div>
             <div>
-              <img src="https://via.placeholder.com/468x400?text=Siding Renovation" />
+              <img
+                src="/images/tile-roof-installation.jpg"
+                alt="Tile Roof Installation"
+              />
             </div>
             <h3>Siding Renovation</h3>
             <p>
