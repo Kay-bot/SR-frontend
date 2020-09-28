@@ -1,0 +1,164 @@
+@import 'scss/config';
+@import 'scss/utilities';
+@import 'scss/media-query';
+
+// Secondary header
+.secondary-header {
+  background: $primary-color;
+  height: 2rem;
+  p {
+    display: inline;
+  }
+  span {
+    padding: 10px;
+  }
+  .md-devices {
+    @include md {
+      display: none;
+    }
+    @include sm {
+      display: none;
+    }
+    @include xs {
+      display: none;
+    }
+  }
+}
+
+// navbar
+.brand {
+  font-size: 3rem;
+  margin-right: 0;
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+
+  @include md {
+    font-size: 2rem;
+    width: 80px;
+    height: auto;
+  }
+  @include sm {
+    font-size: 2rem;
+    width: 60px;
+    height: auto;
+  }
+  @include xs {
+    font-size: 2rem;
+    width: 60px;
+    height: auto;
+  }
+  span {
+    color: $dark-color;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  cursor: pointer;
+  &:hover {
+    border-color: $medium-color;
+  }
+  &.current {
+    border-color: $main-color;
+  }
+}
+
+// How can we help
+.specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  h3 {
+    color: $dark-color;
+    padding-bottom: 0.4rem;
+  }
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include xs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// Why Us
+.features {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include xs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .icon-color {
+    color: $main-color;
+    padding-bottom: 0.4rem;
+  }
+  a {
+    color: red;
+  }
+}
+
+// Contact
+.text-fields {
+  display: grid;
+  grid-template-areas:
+    'name email'
+    'subject phone'
+    'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+
+  // Grid Areas
+  .name-input {
+    grid-area: name;
+  }
+  .subject-input {
+    grid-area: subject;
+  }
+  .email-input {
+    grid-area: email;
+  }
+  .phone-input {
+    grid-area: phone;
+  }
+  .message-input {
+    grid-area: message;
+    height: 150px;
+  }
+  .text-input {
+    padding: 0.5rem 1rem;
+  }
+}
+// Footer
+.footer {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: auto;
+  text-align: justify;
+  hr {
+    height: 2px;
+    width: 100%;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  a {
+    color: #fff;
+    font-weight: bold;
+  }
+}

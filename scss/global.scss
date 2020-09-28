@@ -1,0 +1,41 @@
+@import './config';
+@import './media-query';
+@import './utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  // text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: $main-color;
+}
