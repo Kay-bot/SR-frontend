@@ -1,13 +1,9 @@
 import Layout from '../../components/Layout';
-import { Container } from 'reactstrap';
-import InnerHeader from '../../components/InnerHeader';
+import OurTeamComponent from '../../components/OurTeamComponent';
 const OurTeam = () => {
   return (
     <Layout>
-      <InnerHeader />
-      <Container>
-        <div>Our Team</div>
-      </Container>
+      <OurTeamComponent />
     </Layout>
   );
 };

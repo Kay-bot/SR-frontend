@@ -175,8 +175,56 @@
   }
 }
 
-// Signup
+// Signup Signin
 .box {
   width: 50%;
   margin: 0 auto;
+}
+
+//Our Team
+.meetTheTeam {
+  span {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
+.ups {
+  h2 {
+    color: $dark-color;
+  }
+  p {
+    color: #444;
+  }
+}
+.leadership {
+  margin-top: 2rem;
+  display: flex;
+  // grid-gap: 1rem;
+  // grid-template-columns: repeat(2, 1fr);
+  @include md {
+    // grid-template-columns: repeat(1, 1fr);
+  }
+  @include sm {
+    display: block;
+    // grid-template-columns: repeat(1, 1fr);
+  }
+  @include xs {
+    display: block;
+  }
+}
+
+.ourTeam {
+  padding: 1rem;
+  h4 {
+    color: $dark-color;
+  }
+  b {
+    color: $main-color;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px $main-color solid;
+  }
 }
