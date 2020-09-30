@@ -133,36 +133,36 @@
 }
 
 // Contact
-.text-fields {
-  display: grid;
-  grid-template-areas:
-    'name email'
-    'subject phone'
-    'message message';
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem;
+// .text-fields {
+//   display: grid;
+//   grid-template-areas:
+//     'name email'
+//     'subject phone'
+//     'message message';
+//   grid-gap: 1.2rem;
+//   margin-bottom: 1.2rem;
 
-  // Grid Areas
-  .name-input {
-    grid-area: name;
-  }
-  .subject-input {
-    grid-area: subject;
-  }
-  .email-input {
-    grid-area: email;
-  }
-  .phone-input {
-    grid-area: phone;
-  }
-  .message-input {
-    grid-area: message;
-    height: 150px;
-  }
-  .text-input {
-    padding: 0.5rem 1rem;
-  }
-}
+//   // Grid Areas
+//   .name-input {
+//     grid-area: name;
+//   }
+//   .subject-input {
+//     grid-area: subject;
+//   }
+//   .email-input {
+//     grid-area: email;
+//   }
+//   .phone-input {
+//     grid-area: phone;
+//   }
+//   .message-input {
+//     grid-area: message;
+//     height: 150px;
+//   }
+//   .text-input {
+//     padding: 0.5rem 1rem;
+//   }
+// }
 
 // Footer
 .footer {
@@ -195,6 +195,12 @@
     $bg-image no-repeat center right / cover;
   height: 60vh;
   color: #fff;
+  @include sm {
+    height: 50vh;
+  }
+  @include xs {
+    height: 50vh;
+  }
 
   .header-content {
     text-align: center;
@@ -202,6 +208,16 @@
     h1 {
       font-size: 4rem;
       line-height: 1;
+      @include sm {
+        padding-top: 2rem;
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+      @include xs {
+        padding-top: 2rem;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
     }
     a {
       text-decoration: none;
