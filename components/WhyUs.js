@@ -4,7 +4,7 @@ import styles from './Main.module.scss';
 const OurFeatures = () => {
   return (
     <div>
-      <section id="our-features" className="bg-light text-center py-3 mt-3">
+      <section id="our-features" className="text-center py-3">
         <div className="container">
           <h2 className="section-title">Why Choose Us?</h2>
           <div className="bottom-line"></div>
