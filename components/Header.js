@@ -32,34 +32,49 @@ const Header = (props) => {
 
   return (
     <div>
-      <div
-        className={classnames(
-          'text-center text-light py-1',
-          styles['secondary-header']
-        )}
-      >
-        <p className={classnames(styles['md-devices'])}>
-          Strata Roofing Pty Ltd
-          <span> | </span>
-        </p>
-
-        <p className={classnames(styles['md-devices'])}>
+      <div className={classnames('text-center', styles['top'])}>
+        <p className="pt-1">
           Professional Roofing Services throughout the Sydney Area{' '}
-          <span> | </span>
         </p>
-
-        <p>Contact Us: service@strataroofing.com.au</p>
       </div>
-      <Navbar color="#fff" light expand="md">
-        <Link href="/">
+      <div
+        className={classnames('text-light py-1', styles['secondary-header'])}
+      >
+        <div className="text-center">
+          <Link href="/">
+            <img src="/images/logo2.png" alt="Strata Roofing" />
+          </Link>
+        </div>
+        <div className="py-5 d-flex">
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+          </div>
+          <div>
+            <h4>02 9436 3006</h4>
+            <p>service@strataroofing.com.au</p>
+          </div>
+        </div>
+        <div className="py-5 d-flex">
+          <div>
+            <i class="fas fa-home fa-2x"></i>
+          </div>
+          <div>
+            <h4>4th Fl. 44 Hampden Road</h4>
+            <p>Artarmon NSW 2064</p>
+            <p>Weekdays - 9am to 5pm.</p>
+          </div>
+        </div>
+      </div>
+      <Navbar color="light" light expand="md">
+        {/* <Link href="/">
           <NavbarBrand className={classnames('navbar-brand', styles.brand)}>
             <img alt="Strata Roofing" src="/images/logo.png" />
             <span>{APP_NAME}</span>
           </NavbarBrand>
-        </Link>
+        </Link> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="mx-auto" navbar>
             <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/">
                 <NavLink>Home</NavLink>
@@ -97,13 +112,13 @@ const Header = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem className={classnames('text-center', styles.navLink)}>
-              <Link href="/gallery">
-                <NavLink>Gallery</NavLink>
+              <Link href="/preventative-maintenance">
+                <NavLink>Preventative Maintenance</NavLink>
               </Link>
             </NavItem>
             <NavItem className={classnames('text-center', styles.navLink)}>
-              <Link href="/preventative-maintenance">
-                <NavLink>Preventative Maintenance</NavLink>
+              <Link href="/gallery">
+                <NavLink>Gallery</NavLink>
               </Link>
             </NavItem>
             {/* <NavItem className={classnames('text-center', styles.navLink)}>
