@@ -106,12 +106,12 @@ const Header = (props) => {
                 <NavLink>Gallery</NavLink>
               </Link>
             </NavItem>
-            <NavItem className={classnames('text-center', styles.navLink)}>
+            {/* <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/contact">
                 <NavLink>Contact Us</NavLink>
               </Link>
-            </NavItem>
-            {!isAuth() && (
+            </NavItem> */}
+            {/* {!isAuth() && (
               <React.Fragment>
                 <NavItem className={classnames('text-center', styles.navLink)}>
                   <Link href="/signin">
@@ -124,8 +124,8 @@ const Header = (props) => {
                   </Link>
                 </NavItem>
               </React.Fragment>
-            )}
-            {isAuth() && (
+            )} */}
+            {/* {isAuth() && (
               <NavItem className={classnames('text-center', styles.navLink)}>
                 <NavLink
                   onClick={() => signout(() => Router.replace('/signin'))}
@@ -133,7 +133,7 @@ const Header = (props) => {
                   Signout
                 </NavLink>
               </NavItem>
-            )}
+            )} */}
 
             {isAuth() && isAuth().role === 1 && (
               <NavItem className={classnames('text-center', styles.navLink)}>
