@@ -31,7 +31,7 @@ const HowCanWeHelp = () => {
             <div className={classnames(styles.imgFrame)}>
               <img src="/images/membrane.jpg" alt="membrane" />
             </div>
-            <h3>Membrane Installation</h3>
+            <h3>Membrane Roof</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis odio auctor tortor venenatis, quis fermentum eros
@@ -59,7 +59,7 @@ const HowCanWeHelp = () => {
                 alt="Tile Roof Installation"
               />
             </div>
-            <h3>Siding Renovation</h3>
+            <h3>Tile Roof</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis odio auctor tortor venenatis, quis fermentum eros

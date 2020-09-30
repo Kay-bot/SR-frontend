@@ -3,12 +3,7 @@ import classnames from 'classnames';
 
 const OurTeamComponent = () => {
   return (
-    <section className="py-3 px-4">
-      {/* <header className="text-center">
-        <div className="mb-5 px-4 py-4 bg-light text-muted">
-          <h1>Our Team</h1>
-        </div>
-      </header> */}
+    <section>
       <div
         className={classnames('text-center bg-light py-3', styles.meetTheTeam)}
       >
@@ -17,10 +12,7 @@ const OurTeamComponent = () => {
         </h2>
         <div className="bottom-line"></div>
       </div>
-      <div className={classnames('lead text-center pt-4 ', styles.ups)}>
-        <h2>“NOT JUST ANOTHER ROOFING COMPANY”</h2>
-        <p>Meet the team that will turn roof problems into roof solutions. </p>
-      </div>
+
       <div>
         <h2>Leadership</h2>
       </div>

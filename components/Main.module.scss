@@ -90,7 +90,11 @@
     padding-bottom: 0.4rem;
   }
   @include md {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    img {
+      width: 400px;
+      height: auto;
+    }
   }
   @include sm {
     grid-template-columns: repeat(1, 1fr);
@@ -181,6 +185,26 @@
   margin: 0 auto;
 }
 
+// HomeHeader
+.header-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    $bg-image no-repeat center right / cover;
+  height: 60vh;
+  color: #fff;
+
+  .header-content {
+    text-align: center;
+    padding-top: 10%;
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 //Our Team
 .meetTheTeam {
   span {
@@ -198,11 +222,14 @@
 }
 .leadership {
   margin-top: 2rem;
+  justify-content: center;
   display: flex;
   // grid-gap: 1rem;
   // grid-template-columns: repeat(2, 1fr);
   @include md {
     // grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
   }
   @include sm {
     display: block;
