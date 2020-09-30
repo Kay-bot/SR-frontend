@@ -65,11 +65,6 @@ const Header = (props) => {
                 <NavLink>Home</NavLink>
               </Link>
             </NavItem>
-            <NavItem className={classnames('text-center', styles.navLink)}>
-              <Link href="/our-team">
-                <NavLink>Our Team</NavLink>
-              </Link>
-            </NavItem>
             <UncontrolledDropdown
               className={classnames('text-center', styles.navLink)}
               nav
@@ -104,6 +99,11 @@ const Header = (props) => {
             <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/gallery">
                 <NavLink>Gallery</NavLink>
+              </Link>
+            </NavItem>
+            <NavItem className={classnames('text-center', styles.navLink)}>
+              <Link href="/preventative-maintenance">
+                <NavLink>Preventative Maintenance</NavLink>
               </Link>
             </NavItem>
             {/* <NavItem className={classnames('text-center', styles.navLink)}>

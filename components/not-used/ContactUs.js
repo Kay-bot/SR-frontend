@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import styles from './Main.module.scss';
+import styles from '../../components/Main.module.scss';
 
 const ContactUs = () => {
   return (

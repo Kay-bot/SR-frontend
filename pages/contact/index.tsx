@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout';
 import { Container } from 'reactstrap';
-import ContactUs from '../../components/ContactUs';
+import ContactUs from '../../components/not-used/ContactUs';
 
 const Contact = () => {
   return (
