@@ -3,7 +3,7 @@ import styles from './Main.module.scss';
 
 const Footer = (props) => {
   return (
-    <div className={classnames('py-3 my-3', styles.footer)}>
+    <div className={classnames('py-3', styles.footer)}>
       <div className="row mx-3">
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <h4>About Us</h4>

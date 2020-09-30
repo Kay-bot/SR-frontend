@@ -110,6 +110,10 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  div {
+    border: 1px red solid;
+    padding: 2rem;
+  }
   @include md {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -271,12 +275,89 @@
     height: 300px;
     border-radius: 50%;
     // border: 5px $main-color solid;
+    @include md {
+      width: 250px;
+      height: 250px;
+    }
+    @include sm {
+      width: 200px;
+      height: 200px;
+    }
+    @include xs {
+      width: 200px;
+      height: 200px;
+    }
   }
   div {
     width: 480px;
     height: auto;
     span {
       font-weight: bold;
+    }
+  }
+  @include md {
+    div {
+      width: 200px;
+      height: auto;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  @include sm {
+    div {
+      width: 300px;
+      height: auto;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  @include xs {
+    div {
+      width: 300px;
+      height: auto;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Compliance partners
+.compliance-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+  padding: 4rem;
+
+  img {
+    width: 200px;
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    grid-gap: 1.5rem;
+    img {
+      width: 120px;
+      height: 70px;
+      border-radius: 8px;
+    }
+  }
+  @include xs {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+
+  @include sm {
+    display: none;
+    img {
+      display: none;
     }
   }
 }
