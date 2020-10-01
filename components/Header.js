@@ -45,27 +45,41 @@ const Header = (props) => {
             <img src="/images/logo2.png" alt="Strata Roofing" />
           </Link>
         </div>
+
         <div className="py-5 d-flex">
           <div>
-            <i class="fas fa-phone fa-2x"></i>
+            <i className="fas fa-phone fa-2x"></i>
           </div>
           <div>
-            <h4>02 9436 3006</h4>
+            <b>02 9436 3006</b>
             <p>service@strataroofing.com.au</p>
           </div>
         </div>
-        <div className="py-5 d-flex">
+        <div className="py-5 d-flex d-lg-flex d-md-none d-sm-none">
           <div>
-            <i class="fas fa-home fa-2x"></i>
+            <i className="fas fa-home fa-2x"></i>
           </div>
           <div>
-            <h4>4th Fl. 44 Hampden Road</h4>
+            <b>4th Fl. 44 Hampden Road</b>
             <p>Artarmon NSW 2064</p>
-            <p>Weekdays - 9am to 5pm.</p>
+          </div>
+        </div>
+        <div className={classnames('py-5 d-flex')}>
+          <div>
+            <i className="fas fa-clock fa-2x"></i>
+          </div>
+          <div>
+            <b>Office Hours</b>
+            <p>Weekdays - 9am to 5pm</p>
           </div>
         </div>
       </div>
-      <Navbar color="light" light expand="md">
+      <Navbar
+        className={classnames(styles['border-bottom'])}
+        color="#fff"
+        light
+        expand="md"
+      >
         {/* <Link href="/">
           <NavbarBrand className={classnames('navbar-brand', styles.brand)}>
             <img alt="Strata Roofing" src="/images/logo.png" />

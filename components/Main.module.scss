@@ -9,23 +9,19 @@
   color: set-text-color($primary-color);
 }
 .secondary-header {
-  background: #fff;
-  height: 26vh;
+  height: 15vh;
   display: grid;
-  border-bottom: 2px solid $primary-color;
   grid-template-columns: repeat(4, 1fr);
-
   img {
-    width: 150px;
+    width: 120px;
     height: auto;
     text-align: left;
   }
 
   div {
-    // width: 100%;
-    // height: 100%;
-
-    h4 {
+    b {
+      font-size: 1.5rem;
+      font-weight: bold;
       color: black;
     }
     p {
@@ -43,17 +39,39 @@
 
   @include md {
     grid-template-columns: repeat(3, 1fr);
-    height: 30vh;
+    height: 20vh;
     img {
-      width: 120px;
+      width: 100px;
       height: auto;
     }
+    div {
+      b {
+        font-size: 1rem;
+      }
+      p {
+        font-weight: normal;
+      }
+    }
   }
+
   @include sm {
     grid-template-columns: repeat(1, 1fr);
     img {
       width: 100px;
       height: auto;
+    }
+    div {
+      b {
+        display: none;
+      }
+      p {
+        display: none;
+      }
+    }
+    div {
+      i {
+        display: none;
+      }
     }
   }
   @include xs {
@@ -62,10 +80,27 @@
       width: 100px;
       height: auto;
     }
+    div {
+      b {
+        display: none;
+      }
+      p {
+        display: none;
+      }
+    }
+    div {
+      i {
+        display: none;
+      }
+    }
   }
 }
 
 // navbar
+.border-bottom {
+  padding-top: 1rem;
+  border-bottom: 3px solid $primary-color;
+}
 .brand {
   font-size: 3rem;
   margin-right: 0;
@@ -281,6 +316,7 @@
 //   }
 // }
 .staff {
+  padding-top: 1rem;
   h2 {
     font-weight: bold;
   }
@@ -294,7 +330,6 @@
 }
 
 .leadership {
-  margin-top: 2rem;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -320,6 +355,7 @@
 
 .ourTeam {
   padding: 1rem;
+  text-align: center;
   h4 {
     color: $dark-color;
   }
@@ -349,6 +385,9 @@
     height: auto;
     span {
       font-weight: bold;
+    }
+    p {
+      text-align: justify;
     }
   }
   @include md {
@@ -388,8 +427,8 @@
   padding: 4rem;
 
   img {
-    width: 200px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
     border-radius: 8px;
   }
 

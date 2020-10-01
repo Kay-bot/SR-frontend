@@ -25,6 +25,9 @@ const Footer = (props) => {
             Artarmon 2064, NSW , Sydney.
           </p>
           <p>
+            <i className="fas fa-phone"></i> 02 9436 3006
+          </p>
+          <p>
             <i className="fas fa-envelope-square"></i>{' '}
             service@strataroofing.com.au
           </p>

@@ -3,20 +3,20 @@ import classnames from 'classnames';
 
 const OurTeamComponent = () => {
   return (
-    <section>
+    <section className="container">
       <div className={classnames('text-center py-5', styles.meetTheTeam)}>
         <h2 className="section-title">
           Meet The <span>Team</span>
         </h2>
         <div className="bottom-line"></div>
       </div>
-      <div className={classnames('py-4 px-4 bg-light', styles['staff'])}>
+      <div className={classnames('bg-light', styles['staff'])}>
         <div>
           <h2>Leadership</h2>
         </div>
         <hr></hr>
         <div className={classnames(styles['leadership'])}>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/mark.jpg" />
             <h4>Mark A White</h4>
             <b>Managing Director.</b>
@@ -34,7 +34,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Rob.jpg" />
             <h4>Robert Robinson</h4>
             <b>Operations Manager & Second in Charge</b>
@@ -53,14 +53,14 @@ const OurTeamComponent = () => {
         </div>
       </div>
 
-      <div className={classnames('py-4 px-4', styles['staff'])}>
+      <div className={classnames(styles['staff'])}>
         <div>
           <h2>Office Team</h2>
         </div>
         <hr></hr>
         <div></div>
         <div className={classnames(styles['leadership'])}>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/iram.jpg" />
             <h4>Iram Aziz</h4>
             <b>Client Relations Manager</b>
@@ -80,7 +80,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Ria.jpg" />
             <h4>Ria Isbell Lewis</h4>
             <b>Accounts/Office Mamanger</b>
@@ -95,7 +95,7 @@ const OurTeamComponent = () => {
             </div>
           </div>
 
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Ramya.jpg" />
             <h4>Ramya Sekar</h4>
             <b>OTechnical Team Leader</b>
@@ -110,7 +110,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Jira.jpg" />
             <h4>Jiraporn Manonai</h4>
             <b>IT & Admin Team</b>
@@ -123,7 +123,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Linh.jpg" />
             <h4>Phuong Linh Doan</h4>
             <b>IT & Admin Team. </b>
@@ -137,14 +137,14 @@ const OurTeamComponent = () => {
         </div>
       </div>
       {/* End */}
-      <div className={classnames('py-4 px-4 bg-light', styles['staff'])}>
+      <div className={classnames('bg-light', styles['staff'])}>
         <div>
           <h2>Fieldwork Team</h2>
         </div>
         <hr></hr>
 
         <div className={classnames(styles['leadership'])}>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/alex.jpg" />
             <h4>Alexander White</h4>
             <b>Logistics Team</b>
@@ -159,7 +159,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/kevin.jpg" />
             <h4>Kevin Moore</h4>
             <b>Membrane Roofing Division Manager</b>
@@ -171,7 +171,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Thomas.jpg" />
             <h4>Thomas Guilbot</h4>
             <b>Gutter Maintenance Division Supervisor</b>
@@ -184,7 +184,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Raymond.jpg" />
             <h4>Ray Bedford</h4>
             <b>Licensed Supervisor & Senior Estimator</b>
@@ -199,7 +199,7 @@ const OurTeamComponent = () => {
               </p>
             </div>
           </div>
-          <div className={classnames('text-center py-4', styles.ourTeam)}>
+          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Ray.jpg" />
             <h4>Stuart Goulding</h4>
             <b>Supervisor & Estimator</b>
