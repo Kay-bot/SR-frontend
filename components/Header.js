@@ -75,7 +75,7 @@ const Header = (props) => {
         </div>
       </div>
       <Navbar
-        className={classnames(styles['border-bottom'])}
+        className={classnames('mx-auto', styles['border-bottom'])}
         color="#fff"
         light
         expand="md"
