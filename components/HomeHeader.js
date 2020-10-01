@@ -10,7 +10,7 @@ const HomeHeader = () => {
         <p className="lead">
           Meet the team that will turn roof problems into roof solutions.{' '}
         </p>
-        <a href="#" className={classnames('btn-main')}>
+        <a href="tel:0294363006" className={classnames('btn-main')}>
           Call Us Now
         </a>
       </div>
