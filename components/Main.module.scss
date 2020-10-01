@@ -12,13 +12,20 @@
   height: 15vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   img {
     width: 120px;
     height: auto;
     text-align: left;
   }
-
   div {
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        background-color: $main-color;
+      }
+    }
     b {
       font-size: 1.5rem;
       font-weight: bold;

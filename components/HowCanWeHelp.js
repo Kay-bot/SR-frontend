@@ -5,7 +5,7 @@ import Link from 'next/link';
 const HowCanWeHelp = () => {
   return (
     <div>
-      <section id="how-can-we-help" className="text-center py-2">
+      <section id="how-can-we-help" className="text-center py-4">
         <h2 className="section-title">How Can We Help You?</h2>
         <div className="bottom-line"></div>
         <p className="lead">
@@ -27,6 +27,7 @@ const HowCanWeHelp = () => {
               iaculis.
             </p>
           </div>
+
           <div>
             <div className={classnames(styles.imgFrame)}>
               <img src="/images/membrane.jpg" alt="membrane" />
@@ -68,7 +69,7 @@ const HowCanWeHelp = () => {
           </div>
         </div>
         <p className="lead">Get in touch for a free estimate and inspection</p>
-        <Link href="/contact">
+        <Link href="tel:0294363006">
           <a className="btn-main">Contact us now</a>
         </Link>
       </section>

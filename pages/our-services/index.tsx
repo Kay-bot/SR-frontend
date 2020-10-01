@@ -1,11 +1,11 @@
 import Layout from '../../components/Layout';
 import { Container } from 'reactstrap';
-
+import HowCanWeHelp from '../../components/HowCanWeHelp';
 const OurServices = () => {
   return (
     <Layout>
       <Container>
-        <div>Our Service</div>
+        <HowCanWeHelp />
       </Container>
     </Layout>
   );

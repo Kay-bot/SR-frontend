@@ -51,8 +51,12 @@ const Header = (props) => {
             <i className="fas fa-phone fa-2x"></i>
           </div>
           <div>
-            <b>02 9436 3006</b>
-            <p>service@strataroofing.com.au</p>
+            <a href="tel:0294363006">
+              <b>02 9436 3006</b>
+            </a>
+            <a href="mailto:0294363006">
+              <p>service@strataroofing.com.au</p>
+            </a>
           </div>
         </div>
         <div className="py-5 d-flex d-lg-flex d-md-none d-sm-none">
@@ -94,7 +98,12 @@ const Header = (props) => {
                 <NavLink>Home</NavLink>
               </Link>
             </NavItem>
-            <UncontrolledDropdown
+            <NavItem className={classnames('text-center', styles.navLink)}>
+              <Link href="/our-services">
+                <NavLink>Our Services</NavLink>
+              </Link>
+            </NavItem>
+            {/* <UncontrolledDropdown
               className={classnames('text-center', styles.navLink)}
               nav
               inNavbar
@@ -124,7 +133,7 @@ const Header = (props) => {
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
             <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/preventative-maintenance">
                 <NavLink>Preventative Maintenance</NavLink>
