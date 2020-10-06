@@ -52,32 +52,63 @@ const Header = (props) => {
           </div>
           <div>
             <a href="tel:0294363006">
-              <b>02 9436 3006</b>
-            </a>
-            <a href="mailto:0294363006">
-              <p>service@strataroofing.com.au</p>
+              <p>02 9436 3006</p>
             </a>
           </div>
         </div>
-        <div className="py-5 d-flex d-lg-flex d-md-none d-sm-none">
+        <div className="py-5 d-flex">
           <div>
-            <i className="fas fa-home fa-2x"></i>
+            <i className="fas fa-envelope-square fa-2x"></i>
           </div>
           <div>
-            <b>4th Fl. 44 Hampden Road</b>
-            <p>Artarmon NSW 2064</p>
+            <a href="mailto:service@strataroofing.com.au">
+              <p>Service@strataroofing.com.au</p>
+            </a>
           </div>
         </div>
         <div className={classnames('py-5 d-flex')}>
           <div>
-            <i className="fas fa-clock fa-2x"></i>
+            <img
+              className={classnames(styles.img)}
+              src="/images/sydney-map.png"
+            />
           </div>
           <div>
-            <b>Office Hours</b>
-            <p>Weekdays - 9am to 5pm</p>
+            <p>Servicing all of metro Sydney - Everyday</p>
           </div>
         </div>
       </div>
+
+      {/* Mobile responsive */}
+
+      <div
+        className={classnames(
+          'text-light d-lg-none d-xl-none',
+          styles['secondary-header-responsive']
+        )}
+      >
+        <div>
+          <Link href="/">
+            <img src="/images/logo2.png" alt="Strata Roofing" />
+          </Link>
+        </div>
+
+        <div>
+          <a href="tel:0294363006">
+            <p>Tel: 02 9436 3006</p>
+          </a>
+        </div>
+        <div>
+          <a href="mailto:service@strataroofing.com.au">
+            <p>Email: Service@strataroofing.com.au</p>
+          </a>
+        </div>
+
+        <div>
+          <p>Servicing all of metro Sydney - Everyday</p>
+        </div>
+      </div>
+
       <Navbar
         className={classnames('mx-auto', styles['border-bottom'])}
         color="#fff"

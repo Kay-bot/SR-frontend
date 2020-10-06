@@ -26,79 +26,59 @@
         background-color: $main-color;
       }
     }
-    b {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: black;
-    }
     p {
       color: black;
-      margin: 0;
-      font-weight: bold;
     }
+    // p {
+    //   color: black;
+    //   margin: 0;
+    //   font-weight: bold;
+    // }
   }
   div {
     padding: 5px;
     i {
       color: black;
     }
+    .img {
+      width: 35px;
+      height: auto;
+    }
   }
 
   @include md {
-    grid-template-columns: repeat(3, 1fr);
-    height: 20vh;
-    img {
-      width: 100px;
-      height: auto;
-    }
-    div {
-      b {
-        font-size: 1rem;
-      }
-      p {
-        font-weight: normal;
-      }
-    }
+    display: none;
   }
 
   @include sm {
-    grid-template-columns: repeat(1, 1fr);
-    img {
-      width: 100px;
-      height: auto;
-    }
-    div {
-      b {
-        display: none;
-      }
-      p {
-        display: none;
-      }
-    }
-    div {
-      i {
-        display: none;
-      }
-    }
+    display: none;
   }
   @include xs {
-    grid-template-columns: repeat(1, 1fr);
-    img {
-      width: 100px;
-      height: auto;
+    display: none;
+  }
+}
+
+// responsive
+.secondary-header-responsive {
+  text-align: center;
+  img {
+    padding: 1rem 0;
+    width: 80px;
+    height: auto;
+  }
+
+  div {
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        padding: 5px;
+        background-color: $main-color;
+      }
     }
-    div {
-      b {
-        display: none;
-      }
-      p {
-        display: none;
-      }
-    }
-    div {
-      i {
-        display: none;
-      }
+    p {
+      color: #2b2d2f;
     }
   }
 }
@@ -191,10 +171,30 @@
   margin-top: 2rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   div {
-    border: 1px #2b2d2f solid;
+    border: 2px #4dd314 solid;
     padding: 2rem;
+    h3 {
+      color: $primary-color;
+      font-weight: bold;
+    }
+    p {
+      text-align: left;
+    }
+    b {
+      font-weight: bolder;
+    }
+    u {
+      font-weight: bold;
+    }
+    span {
+      color: $primary-color;
+      font-weight: bold;
+    }
+    i {
+      color: #4dd314;
+    }
   }
   @include md {
     grid-template-columns: repeat(1, 1fr);
@@ -211,6 +211,11 @@
   }
   a {
     color: red;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $main-color;
+    }
   }
 }
 
@@ -259,6 +264,10 @@
     display: block;
     margin: 0 auto 1rem auto;
   }
+  b {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
   a {
     color: #fff;
     font-weight: bold;
@@ -277,32 +286,57 @@
     $bg-image no-repeat center right / cover;
   height: 60vh;
   color: #fff;
+  @include md {
+    height: 80vh;
+  }
   @include sm {
-    height: 50vh;
+    height: 45vh;
   }
   @include xs {
-    height: 50vh;
+    height: 45vh;
   }
 
   .header-content {
     text-align: center;
     padding-top: 10%;
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: bolder;
       line-height: 1;
-      @include sm {
-        padding-top: 2rem;
-        font-size: 3rem;
-        line-height: 1.2;
-      }
-      @include xs {
-        padding-top: 2rem;
-        font-size: 2rem;
-        line-height: 1.2;
-      }
     }
     a {
       text-decoration: none;
+    }
+
+    @include sm {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 2;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+    }
+
+    @include xs {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 2;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
     }
   }
 }
@@ -314,14 +348,7 @@
     font-weight: bold;
   }
 }
-// .ups {
-//   h2 {
-//     color: $dark-color;
-//   }
-//   p {
-//     color: #444;
-//   }
-// }
+
 .staff {
   padding-top: 1rem;
   h2 {
@@ -370,9 +397,10 @@
     color: $main-color;
   }
   img {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
+    width: 380px;
+    height: 400px;
+    filter: contrast(100%);
+    // border-radius: 50%;
     // border: 5px $main-color solid;
     @include md {
       width: 250px;
@@ -427,27 +455,33 @@
 }
 
 // Compliance partners
+.compliance-partners {
+  padding-bottom: 2rem;
+  @include sm {
+    display: none;
+  }
+  @include xs {
+    display: none;
+  }
+}
 .compliance-logos {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
-  padding: 4rem;
-
+  display: flex;
+  justify-content: space-evenly;
   img {
-    width: 160px;
-    height: 100px;
-    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    width: 200px;
+    height: auto;
+  }
+  .img {
+    text-align: center;
+    width: 120px;
+    height: auto;
   }
 
   @include md {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3rem;
-    grid-gap: 1.5rem;
-    img {
-      width: 120px;
-      height: 70px;
-      border-radius: 8px;
-    }
+    display: flex;
+    flex-wrap: wrap;
   }
   @include xs {
     display: none;

@@ -6,15 +6,48 @@ const Footer = (props) => {
     <div className={classnames('py-3', styles.footer)}>
       <div className="row mx-3">
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h4>About Us</h4>
+          <h4>Why use Strata Roofing?</h4>
           <hr></hr>
+
           <p>
-            Strata Roofing specialises in roofing, siding and gutter replacement
-            services. Strata Roofing team has all the necessary training and
-            equipment to ensure that every job is done safely, on time and
-            adheres to OHS standards. Rest assured you can count on Strata
-            Roofing for high-quality services that come complete with our
-            promise of reasonable rates.
+            <i className="fas fa-check"></i> We are the ONLY roofing contractor
+            in Sydney, that only serves the strata sector (as our name confirms)
+            we don’t work in other sectors!{' '}
+            <b>that makes us the real strata specialists.</b>
+          </p>
+          <p>
+            <i className="fas fa-check"></i> Arguably the{' '}
+            <b>highest quality roofing reports in Sydney</b> (free to regular
+            strata managers)
+          </p>
+          <p>
+            <i className="fas fa-check"></i>
+            <b>
+              An admin / office support team, of highly qualified and
+              experienced personal,
+            </b>{' '}
+            that is unmatched by others, serving our sector, professionalism is
+            our policy cornerstone.
+          </p>
+          <p>
+            <i className="fas fa-check"></i> As well-crafted system in place,
+            that strives to deliver a <b>quality product in reasonable time.</b>
+          </p>
+          <p>
+            <i className="fas fa-check"></i>{' '}
+            <b>Strict quality control enforced</b> by a mature aged, highly
+            experienced senior management team, with more experience at the coal
+            face, than you could ever wish for.
+          </p>
+          <p>
+            <i className="fas fa-check"></i>{' '}
+            <b>
+              High quality completed job reports, with sufficient clear
+              photographs of the completed works,
+            </b>{' '}
+            that gives strata committee’s complete confidence with authorising
+            invoice payments. These reports are also very helpful in the
+            unlikely event of a warranty claim.
           </p>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
