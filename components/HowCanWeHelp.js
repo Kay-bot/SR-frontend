@@ -5,6 +5,17 @@ import Link from 'next/link';
 const HowCanWeHelp = () => {
   return (
     <div>
+      <section>
+        <header className={classnames(styles['h-our-services'])}>
+          <div className={classnames(styles['header-content'])}>
+            <h1>We are Strata Specialist.</h1>
+            <p className="lead">
+              Our team is fully trained in strata managed property’s needs and
+              compliance laws and regulations
+            </p>
+          </div>
+        </header>
+      </section>
       <section id="how-can-we-help" className="text-center py-4">
         <h2 className="section-title">How Can We Help You?</h2>
         <div className="bottom-line"></div>
