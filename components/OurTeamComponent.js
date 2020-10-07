@@ -143,7 +143,7 @@ const OurTeamComponent = () => {
       {/* End */}
       <div className={classnames('bg-light', styles['staff'])}>
         <div>
-          <h2>Fieldwork Team</h2>
+          <h2>Fieldwork / On Site Team</h2>
         </div>
         <hr></hr>
 
