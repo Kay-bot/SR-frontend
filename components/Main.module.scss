@@ -592,6 +592,150 @@
   }
 }
 
+// Preventative Maintenace
+.preventative-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/images/bg-preventative.jpg') no-repeat center right / cover;
+  height: 60vh;
+  color: #fff;
+
+  @include sm {
+    height: 25vh;
+  }
+  @include xs {
+    height: 20vh;
+  }
+
+  .header-content {
+    text-align: center;
+    padding-top: 10%;
+    h1 {
+      font-size: 5rem;
+      font-weight: bolder;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: bolder;
+      line-height: 1;
+    }
+
+    @include md {
+      padding-top: 5rem;
+      h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+
+    @include sm {
+      padding-top: 2rem;
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+
+    @include xs {
+      padding-top: 2rem;
+      h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+// Gallery
+.gallery-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/images/bg-gallery.jpg') no-repeat center right / cover;
+  height: 60vh;
+  color: #fff;
+
+  @include sm {
+    height: 25vh;
+  }
+  @include xs {
+    height: 20vh;
+  }
+
+  .header-content {
+    text-align: center;
+    padding-top: 10%;
+    h1 {
+      font-size: 5rem;
+      font-weight: bolder;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: bolder;
+      line-height: 1;
+    }
+
+    @include md {
+      padding-top: 5rem;
+      h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+
+    @include sm {
+      padding-top: 2rem;
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+
+    @include xs {
+      padding-top: 2rem;
+      h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+  }
+}
+
 .gallery {
   .header-title {
     padding-left: 1rem;

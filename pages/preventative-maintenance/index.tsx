@@ -1,12 +1,10 @@
 import Layout from '../../components/Layout';
-import { Container } from 'reactstrap';
+import PreventativeMaintenance from '../../components/PreventativeMaintenance';
 
 const Preventative = () => {
   return (
     <Layout>
-      <Container>
-        <div>Preventative Maintenace</div>
-      </Container>
+      <PreventativeMaintenance />
     </Layout>
   );
 };
