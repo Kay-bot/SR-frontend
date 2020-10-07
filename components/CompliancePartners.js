@@ -3,7 +3,7 @@ import styles from './Main.module.scss';
 
 const CompliancePartners = () => {
   return (
-    <section className="bg-light">
+    <section>
       <div className={classnames(styles['compliance-partners'])}>
         <h2 className="section-title pt-4">Compliance Partners</h2>
         <div className="bottom-line"></div>
