@@ -47,7 +47,7 @@ const OurTeamComponent = () => {
                 consistent. He is responsible for the day to day management of
                 the on-the-road team and ensures every client is happy with the
                 outcome of the works. Rob has been with the company for 9 years
-                who has a manoe no nonesense attitude.
+                and has a mature no nonesense attitude.
               </p>
             </div>
           </div>

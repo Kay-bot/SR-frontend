@@ -290,10 +290,10 @@
     height: 80vh;
   }
   @include sm {
-    height: 45vh;
+    height: 30vh;
   }
   @include xs {
-    height: 45vh;
+    height: 30vh;
   }
 
   .header-content {
@@ -315,9 +315,9 @@
 
     @include sm {
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: bolder;
-        line-height: 2;
+        line-height: 1;
       }
       p {
         font-size: 1rem;
@@ -328,9 +328,9 @@
 
     @include xs {
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: bolder;
-        line-height: 2;
+        line-height: 1;
       }
       p {
         font-size: 1rem;
