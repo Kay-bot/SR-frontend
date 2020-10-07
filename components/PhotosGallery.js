@@ -18,7 +18,7 @@ const PhotoGallery = () => {
 
       <section
         id="gallery"
-        className={classnames('text-center py-3', styles['gallery'])}
+        className={classnames('text-center px-5 py-3', styles['gallery'])}
       >
         <h2 className="section-title">Our Project Gallery</h2>
         <div className="bottom-line"></div>
