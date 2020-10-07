@@ -286,9 +286,7 @@
     $bg-image no-repeat center right / cover;
   height: 60vh;
   color: #fff;
-  @include md {
-    height: 30vh;
-  }
+
   @include sm {
     height: 25vh;
   }
@@ -327,6 +325,7 @@
     }
 
     @include sm {
+      padding-top: 2rem;
       h1 {
         font-size: 2.5rem;
         font-weight: bolder;
