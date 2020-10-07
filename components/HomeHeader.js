@@ -1,6 +1,5 @@
 import styles from './Main.module.scss';
 import classnames from 'classnames';
-import Link from 'next/link';
 
 const HomeHeader = () => {
   return (
@@ -10,7 +9,7 @@ const HomeHeader = () => {
         <p className="lead">
           Meet the team that will turn roof problems into roof solutions.{' '}
         </p>
-        <a href="tel:0294363006" className={classnames('btn-main')}>
+        <a href="tel:0294363006" className="btn-main">
           Call Us Now
         </a>
       </div>

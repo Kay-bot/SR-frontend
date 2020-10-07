@@ -282,18 +282,18 @@
 
 // HomeHeader
 .header-home {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     $bg-image no-repeat center right / cover;
   height: 60vh;
   color: #fff;
   @include md {
-    height: 80vh;
+    height: 30vh;
   }
   @include sm {
-    height: 30vh;
+    height: 25vh;
   }
   @include xs {
-    height: 30vh;
+    height: 20vh;
   }
 
   .header-content {
@@ -313,29 +313,49 @@
       text-decoration: none;
     }
 
+    @include md {
+      h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 1;
+      }
+    }
+
     @include sm {
       h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
         font-size: 1.5rem;
         font-weight: bolder;
         line-height: 1;
       }
-      p {
-        font-size: 1rem;
-        font-weight: bolder;
-        line-height: 1.5;
+      a {
+        display: none;
       }
     }
 
     @include xs {
+      padding-top: 2rem;
       h1 {
         font-size: 1.5rem;
         font-weight: bolder;
-        line-height: 1;
+        line-height: 1.5;
       }
       p {
         font-size: 1rem;
         font-weight: bolder;
-        line-height: 1.5;
+        line-height: 1;
+      }
+      a {
+        display: none;
       }
     }
   }
@@ -397,11 +417,9 @@
     color: $main-color;
   }
   img {
-    width: 380px;
+    width: 400px;
     height: 400px;
-    filter: contrast(100%);
-    // border-radius: 50%;
-    // border: 5px $main-color solid;
+
     @include md {
       width: 250px;
       height: 250px;
