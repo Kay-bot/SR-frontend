@@ -30,7 +30,7 @@ const Footer = (props) => {
             our policy cornerstone.
           </p>
           <p>
-            <i className="fas fa-check"></i> As well-crafted system in place,
+            <i className="fas fa-check"></i> A well-crafted system in place,
             that strives to deliver a <b>quality product in reasonable time.</b>
           </p>
           <p>
