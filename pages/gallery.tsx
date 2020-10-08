@@ -1,5 +1,5 @@
-import Layout from '../../components/Layout';
-import PhotosGallery from '../../components/PhotosGallery';
+import Layout from '../components/Layout';
+import PhotosGallery from '../components/PhotosGallery';
 const Gallery = () => {
   return (
     <Layout>

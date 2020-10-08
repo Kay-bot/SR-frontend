@@ -1,5 +1,5 @@
-import Layout from '../../components/Layout';
-import HowCanWeHelp from '../../components/HowCanWeHelp';
+import Layout from '../components/Layout';
+import HowCanWeHelp from '../components/HowCanWeHelp';
 const OurServices = () => {
   return (
     <Layout>
