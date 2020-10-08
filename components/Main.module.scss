@@ -494,8 +494,8 @@
     color: $main-color;
   }
   img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 
     @include md {
       width: 250px;

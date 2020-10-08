@@ -183,19 +183,6 @@ const OurTeamComponent = () => {
           </div>
 
           <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/kevin.jpg" />
-            <h4>Kevin Moore</h4>
-            <b>Membrane Roofing Division Manager</b>
-            <div>
-              <p>
-                30 years of Membrane roof experience and a key member of our
-                management team, Kevin joined us 8 years ago and is well known,
-                as one of the most respected experts of membrane roofs in
-                Sydney.
-              </p>
-            </div>
-          </div>
-          <div className={classnames(styles.ourTeam)}>
             <img src="/staff/Thomas.jpg" />
             <h4>Thomas Guilbot</h4>
             <b>Gutter Maintenance Division Supervisor</b>
@@ -210,6 +197,19 @@ const OurTeamComponent = () => {
             </div>
           </div>
 
+          <div className={classnames(styles.ourTeam)}>
+            <img src="/staff/kevin.jpg" />
+            <h4>Kevin Moore</h4>
+            <b>Membrane Roofing Division Manager</b>
+            <div>
+              <p>
+                30 years of Membrane roof experience and a key member of our
+                management team, Kevin joined us 8 years ago and is well known,
+                as one of the most respected experts of membrane roofs in
+                Sydney.
+              </p>
+            </div>
+          </div>
           <div className={classnames(styles.ourTeam)}>
             <img src="/staff/alex.jpg" />
             <h4>Alexander White</h4>
