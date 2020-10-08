@@ -150,7 +150,7 @@ const OurTeamComponent = () => {
 
         <div className={classnames(styles['leadership'])}>
           <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Raymond.jpg" />
+            <img src="/staff/ray-bedford.jpg" />
             <h4>Ray Bedford</h4>
             <b>Licensed Supervisor & Senior Estimator</b>
             <div>
