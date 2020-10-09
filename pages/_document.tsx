@@ -26,6 +26,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link rel="stylesheet" href="/static/css/styles.css" />
+          <link rel="stylesheet" href="/static/css/quill.snow.css" />
           <link
             href="https://fonts.googleapis.com/css?family=Dosis"
             rel="stylesheet"
