@@ -16,37 +16,37 @@ export const createStaff = (staff, token) => {
     .catch((err) => console.log(err));
 };
 
-// export const getCategories = () => {
-//   return fetch(`${API}/categories`, {
-//     method: 'GET',
-//   })
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .catch((err) => console.log(err));
-// };
+export const getAllStaff = () => {
+  return fetch(`${API}/allstaff`, {
+    method: 'GET',
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};
 
-// export const singleCategory = (slug) => {
-//   return fetch(`${API}/category/${slug}`, {
-//     method: 'GET',
-//   })
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .catch((err) => console.log(err));
-// };
+export const getOneStaff = (slug) => {
+  return fetch(`${API}/staff/${slug}`, {
+    method: 'GET',
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};
 
-// export const removeCategory = (slug, token) => {
-//   return fetch(`${API}/category/${slug}`, {
-//     method: 'DELETE',
-//     headers: {
-//       Accept: 'application/json',
-//       'Content-Type': 'application/json',
-//       Authorization: `Bearer ${token}`,
-//     },
-//   })
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .catch((err) => console.log(err));
-// };
+export const removeStaff = (slug, token) => {
+  return fetch(`${API}/staff/${slug}`, {
+    method: 'DELETE',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};

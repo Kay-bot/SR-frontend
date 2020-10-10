@@ -1,3 +1,5 @@
+import OnsiteTeam from '../components/OnsiteTeam';
+
 import styles from './Main.module.scss';
 import classnames from 'classnames';
 
@@ -142,91 +144,8 @@ const OurTeamComponent = () => {
         </div>
       </div>
       {/* End */}
-      <div className={classnames('bg-light', styles['staff'])}>
-        <div>
-          <h2>Fieldwork/On-site Team</h2>
-        </div>
-        <hr></hr>
 
-        <div className={classnames(styles['leadership'])}>
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/ray-bedford.jpg" />
-            <h4>Ray Bedford</h4>
-            <b>Licensed Supervisor & Senior Estimator</b>
-            <div>
-              <p>
-                10 years with Strata Roofing and over 40 years of roofing
-                experience servicing all types of roofs. Ray is arguably the
-                best estimator in NSW – knowledge & skill are his best assets.
-                Ray is also skilled at producing ‘no-nonsense’ reports that
-                non-trades people can easily understand, that allows them to
-                make informed decisions.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/stuart.jpg" />
-            <h4>Stuart Goulding</h4>
-            <b>Supervisor & Estimator</b>
-            <div>
-              <p>
-                Over 30 years of roofing experience servicing all types of
-                roofs, Stuart is a driven performer with metal and tile roofs.
-                Also guttering and rainwater systems. He has a keen interest in
-                ‘listening’ to the resident's needs and requirements. Stuart is
-                also skilled at producing ‘no-nonsense’ reports that non-trades
-                people can easily understand that allows them to make informed
-                decisions.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Thomas.jpg" />
-            <h4>Thomas Guilbot</h4>
-            <b>Gutter Maintenance Division Supervisor</b>
-            <div>
-              <p>
-                The best we have ever had, running this difficult service!
-                Thomas joined us 2 years ago and has proven himself to be a
-                reliable, honest and likeable man. Our resident “Frenchman”, is
-                also gradually putting together our future anchor point
-                installation division.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/kevin.jpg" />
-            <h4>Kevin Moore</h4>
-            <b>Membrane Roofing Division Manager</b>
-            <div>
-              <p>
-                30 years of Membrane roof experience and a key member of our
-                management team, Kevin joined us 8 years ago and is well known,
-                as one of the most respected experts of membrane roofs in
-                Sydney.
-              </p>
-            </div>
-          </div>
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/alex.jpg" />
-            <h4>Alexander White</h4>
-            <b>Logistics Team</b>
-            <br />
-            <b>Second generation in training!</b>
-            <div>
-              <p>
-                Training in all aspects of the business, Alex has been with the
-                company for 6 years. Alex has a 'hard taskmaster' with his
-                father, Mark. However, he has successfully trained with
-                accounting, customer service and basic quote preparation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <OnsiteTeam />
     </section>
   );
 };
