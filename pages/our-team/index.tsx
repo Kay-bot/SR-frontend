@@ -1,10 +1,10 @@
 import Layout from '../../components/Layout';
-import OnsiteTeam from '../../components/OnsiteTeam';
+import SupportTeam from '../../components/SupportTeam';
 
 const OurTeam = () => {
   return (
     <Layout>
-      <OnsiteTeam />
+      <SupportTeam />
     </Layout>
   );
 };

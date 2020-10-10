@@ -1,12 +1,12 @@
 import renderHTML from 'react-render-html';
 import { useState, useEffect } from 'react';
-import { getAllStaff } from '../actions/staff';
+import { getAllStaff } from '../actions/supportTeam';
 import { API } from '../config';
 
 import styles from '../components/Main.module.scss';
 import classnames from 'classnames';
 
-const OnsiteTeam = () => {
+const SupportTeam = () => {
   const [values, setValues] = useState({
     data: [],
     reload: false,
@@ -29,26 +29,24 @@ const OnsiteTeam = () => {
   };
 
   const showAllStaff = () => {
-    return data.map((staff, index) => {
+    return data.map((supportStaff, index) => {
       return (
-        // <div className={classnames(styles['leadership'])}>
         <div key={index} className={classnames(styles.ourTeam)}>
           <img
             className="img img-fluid"
-            src={`${API}/staff/photo/${staff.slug}`}
-            alt={staff.title}
+            src={`${API}/support-team/photo/${supportStaff.slug}`}
+            alt={supportStaff.title}
           />
-          <h4>{staff.name}</h4>
-          <b>{staff.title}</b>
-          <div>{renderHTML(staff.body)}</div>
+          <h4>{supportStaff.name}</h4>
+          <b>{supportStaff.title}</b>
+          <div>{renderHTML(supportStaff.body)}</div>
         </div>
-        // </div>
       );
     });
   };
 
   return (
-    <div className={classnames('bg-light', styles['staff'])}>
+    <div className={classnames('bg-white', styles['staff'])}>
       <div>
         <h2>Fieldwork/On-site Team</h2>
       </div>
@@ -58,4 +56,4 @@ const OnsiteTeam = () => {
   );
 };
 
-export default OnsiteTeam;
+export default SupportTeam;

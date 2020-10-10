@@ -1,4 +1,5 @@
 import OnsiteTeam from '../components/OnsiteTeam';
+import SupportTeam from '../components/SupportTeam';
 
 import styles from './Main.module.scss';
 import classnames from 'classnames';
@@ -56,95 +57,7 @@ const OurTeamComponent = () => {
         </div>
       </div>
 
-      <div className={classnames(styles['staff'])}>
-        <div>
-          <h2>Office/Support Team</h2>
-        </div>
-        <hr></hr>
-        <div></div>
-        <div className={classnames(styles['leadership'])}>
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/iram.jpg" />
-            <h4>Iram Aziz</h4>
-            <b>Client Relations Manager</b>
-            <div>
-              <p>
-                Iram has a significant background in building and maintaining
-                client relationships. She works closely with the clients to
-                ensure the seamless coordination of their needs in professional
-                and timely manner. Her favourite subject, being psychology, she
-                strongly believes{' '}
-                <span>
-                  "I have learnt that people will forget what you said or did
-                  but they will never forget how you made them feel."
-                </span>{' '}
-                Iram is also involved in the designing of our customer focused
-                management system.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Ramya.jpg" />
-            <h4>Ramya Sekar</h4>
-            <b>Senior Technical-Team Leader</b>
-            <div>
-              <p>
-                Ramya is a Qualified Construction Engineer, holding more than 6
-                years of actual experience and is the brains behind our thorough
-                training regime. Ramya ensures competitive pricing for our
-                quotes, which ensures smooth operations, and she has a strong
-                eye for detail, skilled problem solving and an experienced
-                solution specialist. She is also focused on product quality and
-                available source.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Ria.jpg" />
-            <h4>Ria Isbell Lewis</h4>
-            <b>Accounts/Office Manager</b>
-            <div>
-              <p>
-                Ria is a graduate with Master of Professional Accounting from
-                Australian Catholic University. Ria takes care of the accounts
-                and is responsible for reviewing and revising financials. As an
-                Office Manager, she makes certain that the team co-ordinates
-                from stage to stage, in progress.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Linh.jpg" />
-            <h4>Phuong Linh Doan</h4>
-            <b>IT & Admin Team. </b>
-            <div>
-              <p>
-                Linh is a newer member of our team and is a recent graduate from
-                The University of Sydney in Economics & Psychology.
-              </p>
-            </div>
-          </div>
-
-          <div className={classnames(styles.ourTeam)}>
-            <img src="/staff/Jira.jpg" />
-            <h4>Jiraporn Manonai</h4>
-            <b>IT & Admin Team</b>
-            <div>
-              <p>
-                Jira is a graduate of Business Administration and IT. She
-                previously worked as a Key Accounts Manager. Jira takes immense
-                care in making sure the job is completed accurately to the quote
-                and takes care of the scheduled works calendar to be completed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End */}
-
+      <SupportTeam />
       <OnsiteTeam />
     </section>
   );
