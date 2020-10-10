@@ -80,6 +80,30 @@ const CreateStaff = ({ router }) => {
     }
   };
 
+  const showError = () => {
+    if (error) {
+      return (
+        <div
+          className="alert alert-danger"
+          style={{ display: error ? '' : 'none' }}
+        >
+          {error}
+        </div>
+      );
+    }
+  };
+
+  const showSuccess = () => {
+    return (
+      <div
+        className="alert alert-success"
+        style={{ display: success ? '' : 'none' }}
+      >
+        {success}
+      </div>
+    );
+  };
+
   const createStaffForm = () => {
     return (
       <form onSubmit={publishStaff}>
@@ -141,11 +165,14 @@ const CreateStaff = ({ router }) => {
     );
   };
   return (
-    <div>
-      {createStaffForm()}
-      <h1>{JSON.stringify(name)}</h1>
-      <b>{JSON.stringify(title)}</b>
-      <p>{JSON.stringify(body)}</p>
+    <div className="container-fluid pb-5">
+      <div className="col">
+        {createStaffForm()}
+        <div className="pt-3">
+          {showError()}
+          {showSuccess()}
+        </div>
+      </div>
     </div>
   );
 };
