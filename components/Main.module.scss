@@ -133,20 +133,33 @@
 // How can we help
 .h-our-services {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    $bg-ourservices no-repeat center right / cover;
+    $bg-ourservices no-repeat center / cover;
   height: 60vh;
   color: #fff;
 
+  @include md {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      $bg-ourservices-mobile no-repeat center / cover;
+    height: 50vh;
+    color: #fff;
+  }
+
   @include sm {
-    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-ourservices-mobile no-repeat center / cover;
+    height: 50vh;
+    color: #fff;
   }
   @include xs {
-    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-ourservices-mobile no-repeat center / cover;
+    height: 40vh;
+    color: #fff;
   }
 
   .header-content {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
     h1 {
       font-size: 5rem;
       font-weight: bolder;
@@ -159,7 +172,7 @@
     }
 
     @include md {
-      padding-top: 5rem;
+      padding-top: 25%;
       h1 {
         font-size: 3rem;
         font-weight: bolder;
@@ -173,24 +186,7 @@
     }
 
     @include sm {
-      padding-top: 2rem;
-      h1 {
-        font-size: 2.5rem;
-        font-weight: bolder;
-        line-height: 1.5;
-      }
-      p {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1;
-      }
-      a {
-        display: none;
-      }
-    }
-
-    @include xs {
-      padding-top: 2rem;
+      padding-top: 4rem;
       h1 {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -198,11 +194,22 @@
       }
       p {
         font-size: 1rem;
-        font-weight: bolder;
+        font-weight: bold;
         line-height: 1;
       }
-      a {
-        display: none;
+    }
+
+    @include xs {
+      padding-top: 6rem;
+      h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
       }
     }
   }
@@ -364,11 +371,24 @@
   height: 60vh;
   color: #fff;
 
+  @include md {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      $bg-image-mobile no-repeat center / cover;
+    height: 50vh;
+    color: #fff;
+  }
+
   @include sm {
-    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      $bg-image-mobile no-repeat center / cover;
+    height: 40vh;
+    color: #fff;
   }
   @include xs {
-    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      $bg-image-mobile no-repeat center / cover;
+    height: 40vh;
+    color: #fff;
   }
 
   .header-content {
@@ -389,6 +409,7 @@
     }
 
     @include md {
+      padding-top: 25%;
       h1 {
         font-size: 3rem;
         font-weight: bolder;
@@ -402,24 +423,25 @@
     }
 
     @include sm {
-      padding-top: 2rem;
+      padding-top: 4.2rem;
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.4rem;
         font-weight: bolder;
         line-height: 1.5;
       }
       p {
-        font-size: 1.5rem;
-        font-weight: bolder;
+        font-size: 1rem;
+        font-weight: bold;
         line-height: 1;
       }
       a {
-        display: none;
+        padding: 5px;
+        font-size: 12px;
       }
     }
 
     @include xs {
-      padding-top: 2rem;
+      padding-top: 6rem;
       h1 {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -427,11 +449,12 @@
       }
       p {
         font-size: 1rem;
-        font-weight: bolder;
+        font-weight: bold;
         line-height: 1;
       }
       a {
-        display: none;
+        padding: 5px;
+        font-size: 12px;
       }
     }
   }
@@ -467,16 +490,13 @@
     color: $dark-color;
     font-weight: bold;
   }
-  // grid-gap: 1rem;
-  // grid-template-columns: repeat(2, 1fr);
+
   @include md {
-    // grid-template-columns: repeat(1, 1fr);
     display: flex;
     flex-wrap: wrap;
   }
   @include sm {
     display: block;
-    // grid-template-columns: repeat(1, 1fr);
   }
   @include xs {
     display: block;
@@ -601,16 +621,28 @@
   height: 60vh;
   color: #fff;
 
+  @include md {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-preventative no-repeat center / cover;
+    height: 60vh;
+    color: #fff;
+  }
   @include sm {
-    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-preventative-mobile no-repeat center right / cover;
+    height: 50vh;
+    color: #fff;
   }
   @include xs {
-    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-preventative-mobile no-repeat center / cover;
+    height: 40vh;
+    color: #fff;
   }
 
   .header-content {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
     h1 {
       font-size: 5rem;
       font-weight: bolder;
@@ -623,7 +655,7 @@
     }
 
     @include md {
-      padding-top: 5rem;
+      padding-top: 25%;
       h1 {
         font-size: 3rem;
         font-weight: bolder;
@@ -637,21 +669,7 @@
     }
 
     @include sm {
-      padding-top: 2rem;
-      h1 {
-        font-size: 2.5rem;
-        font-weight: bolder;
-        line-height: 1.5;
-      }
-      p {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1;
-      }
-    }
-
-    @include xs {
-      padding-top: 2rem;
+      padding-top: 4rem;
       h1 {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -659,7 +677,21 @@
       }
       p {
         font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+
+    @include xs {
+      padding-top: 6rem;
+      h1 {
+        font-size: 1.5rem;
         font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bold;
         line-height: 1;
       }
     }
@@ -669,20 +701,32 @@
 // Gallery
 .gallery-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    $bg-gallery no-repeat center right / cover;
+    $bg-gallery no-repeat center / cover;
   height: 60vh;
   color: #fff;
 
+  @include md {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-gallery-mobile no-repeat center / cover;
+    height: 60vh;
+    color: #fff;
+  }
   @include sm {
-    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-gallery-mobile no-repeat center right / cover;
+    height: 50vh;
+    color: #fff;
   }
   @include xs {
-    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-gallery-mobile no-repeat center / cover;
+    height: 40vh;
+    color: #fff;
   }
 
   .header-content {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
     h1 {
       font-size: 5rem;
       font-weight: bolder;
@@ -695,7 +739,7 @@
     }
 
     @include md {
-      padding-top: 5rem;
+      padding-top: 25%;
       h1 {
         font-size: 3rem;
         font-weight: bolder;
@@ -709,21 +753,7 @@
     }
 
     @include sm {
-      padding-top: 2rem;
-      h1 {
-        font-size: 2.5rem;
-        font-weight: bolder;
-        line-height: 1.5;
-      }
-      p {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1;
-      }
-    }
-
-    @include xs {
-      padding-top: 2rem;
+      padding-top: 4rem;
       h1 {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -731,7 +761,21 @@
       }
       p {
         font-size: 1rem;
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+
+    @include xs {
+      padding-top: 6rem;
+      h1 {
+        font-size: 1.5rem;
         font-weight: bolder;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bold;
         line-height: 1;
       }
     }

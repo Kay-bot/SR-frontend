@@ -6,10 +6,18 @@ $main-color: #0080fe;
 $light-color: #d5d0d0;
 $medium-color: #7198f5;
 $dark-color: #10106d;
+
+// Desktop
 $bg-image: url('/images/bg-homepage.jpg');
 $bg-ourservices: url('/images/sr-ourservices.jpg');
 $bg-preventative: url('/images/sr-preventative.jpg');
 $bg-gallery: url('/images/sr-gallery.jpg');
+
+// Mobile
+$bg-image-mobile: url('/images/mobile/bg-home-mobile.jpg');
+$bg-ourservices-mobile: url('/images/mobile/sr-ourservices-mobile.jpg');
+$bg-preventative-mobile: url('/images/mobile/sr-preventative-mobile.jpg');
+$bg-gallery-mobile: url('/images/mobile/sr-gallery-mobile.jpg');
 
 // Set Text Color
 @function set-text-color($color) {
