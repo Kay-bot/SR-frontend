@@ -16,6 +16,9 @@ const AdminIndex = () => {
               <div className="col-12 py-5">
                 <ul className="list-group">
                   <li className="list-group-item">
+                    <a href="/admin/crud/leader">Add New Leader</a>
+                  </li>
+                  <li className="list-group-item">
                     <a href="/admin/crud/staff">Add New Onsite Staff</a>
                   </li>
 

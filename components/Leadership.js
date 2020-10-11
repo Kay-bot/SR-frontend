@@ -1,12 +1,12 @@
 import renderHTML from 'react-render-html';
 import { useState, useEffect } from 'react';
-import { getAllStaff } from '../actions/supportTeam';
+import { getAllLeader } from '../actions/leader';
 import { API } from '../config';
 
 import styles from '../components/Main.module.scss';
 import classnames from 'classnames';
 
-const SupportTeam = () => {
+const Leadership = () => {
   const [values, setValues] = useState({
     data: [],
     reload: false,
@@ -15,11 +15,11 @@ const SupportTeam = () => {
   const { data, reload } = values;
 
   useEffect(() => {
-    loadAllStaff();
+    loadAllLeader();
   }, [reload]);
 
-  const loadAllStaff = () => {
-    getAllStaff().then((data) => {
+  const loadAllLeader = () => {
+    getAllLeader().then((data) => {
       if (data.error) {
         console.log(data.error);
       } else {
@@ -28,32 +28,32 @@ const SupportTeam = () => {
     });
   };
 
-  const showAllStaff = () => {
-    return data.map((supportStaff, index) => {
+  const showAllLeader = () => {
+    return data.map((leader, index) => {
       return (
         <div key={index} className={classnames(styles.ourTeam)}>
           <img
             className="img img-fluid"
-            src={`${API}/support-team/photo/${supportStaff.slug}`}
-            alt={supportStaff.title}
+            src={`${API}/leader/photo/${leader.slug}`}
+            alt={leader.title}
           />
-          <h4>{supportStaff.name}</h4>
-          <b>{supportStaff.title}</b>
-          <div>{renderHTML(supportStaff.body)}</div>
+          <h4>{leader.name}</h4>
+          <b>{leader.title}</b>
+          <div>{renderHTML(leader.body)}</div>
         </div>
       );
     });
   };
 
   return (
-    <div className={classnames('bg-white', styles['staff'])}>
+    <div className={classnames('bg-light', styles['staff'])}>
       <div>
-        <h2>Office/Support Team</h2>
+        <h2>Leadership</h2>
       </div>
       <hr></hr>
-      <div className={classnames(styles['leadership'])}>{showAllStaff()}</div>
+      <div className={classnames(styles['leadership'])}>{showAllLeader()}</div>
     </div>
   );
 };
 
-export default SupportTeam;
+export default Leadership;
