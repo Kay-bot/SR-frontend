@@ -1,7 +1,7 @@
 import Layout from '../../../components/Layout';
 import { Container } from 'reactstrap';
 import Admin from '../../../components/auth/Admin';
-import StaffCreate from '../../../components/crud/StaffCreate';
+import CreateStaff from '../../../components/crud/CreateStaff';
 import Link from 'next/link';
 
 const Staff = () => {
@@ -15,7 +15,7 @@ const Staff = () => {
                 <h2>Add New Staff</h2>
               </div>
               <div className="col-md-12">
-                <StaffCreate />
+                <CreateStaff />
               </div>
             </div>
           </div>

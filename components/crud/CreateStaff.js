@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { withRouter } from 'next/router';
-import { getCookie, isAuth } from '../../actions/auth';
+import { getCookie } from '../../actions/auth';
 import { createStaff } from '../../actions/staff';
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import { QuillModules, QuillFormats } from '../../helpers/quill';
@@ -30,15 +30,7 @@ const CreateStaff = ({ router }) => {
     hidePublishButton: false,
   });
 
-  const {
-    error,
-    sizeError,
-    success,
-    formData,
-    name,
-    title,
-    hidePublishButton,
-  } = values;
+  const { error, success, formData, name, title } = values;
   const token = getCookie('token');
 
   useEffect(() => {
