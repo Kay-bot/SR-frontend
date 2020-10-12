@@ -44,6 +44,11 @@ const AdminIndex = () => {
                     <a>Update/Delete Support Team</a>
                   </Link>
                 </li>
+                <li className="list-group-item">
+                  <Link href="/admin/crud/manage-leader">
+                    <a>Update/Delete Leadership</a>
+                  </Link>
+                </li>
               </div>
             </div>
           </div>
