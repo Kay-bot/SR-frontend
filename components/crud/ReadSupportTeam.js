@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import Router from 'next/router';
 import Link from 'next/link';
 import { getCookie, isAuth } from '../../actions/auth';
-import { getAllStaff, removeStaff } from '../../actions/staff';
+import { getAllStaff, removeStaff } from '../../actions/supportTeam';
 import { API } from '../../config';
 
-const ReadFieldStaff = () => {
-  const [staff, setStaff] = useState([]);
+const ReadSupportTeam = () => {
+  const [supportTeam, setSupportTeam] = useState([]);
   const [message, setMessage] = useState('');
   const token = getCookie('token');
 
@@ -19,7 +18,7 @@ const ReadFieldStaff = () => {
       if (data.error) {
         console.log(data.error);
       } else {
-        setStaff(data);
+        setSupportTeam(data);
       }
     });
   };
@@ -42,40 +41,40 @@ const ReadFieldStaff = () => {
     }
   };
 
-  const showUpdateButton = (staff) => {
+  const showUpdateButton = (supportTeam) => {
     if (isAuth() && isAuth().role === 0) {
       return (
-        <Link href={`/user/crud/field-staff/${staff.slug}`}>
+        <Link href={`/user/crud/support-team/${supportTeam.slug}`}>
           <a className="mb-3 ml-2 btn btn-sm btn-warning">Update</a>
         </Link>
       );
     } else if (isAuth() && isAuth().role === 1)
       return (
-        <Link href={`/admin/crud/field-staff/${staff.slug}`}>
+        <Link href={`/admin/crud/support-team/${supportTeam.slug}`}>
           <a className="mb-3 ml-2 btn btn-sm btn-warning">Update</a>
         </Link>
       );
   };
 
   const showAllStaff = () => {
-    return staff.map((staff, index) => {
+    return supportTeam.map((supportTeam, index) => {
       return (
         <div key={index}>
           <img
             className="img"
-            src={`${API}/staff/photo/${staff.slug}`}
-            alt={staff.title}
+            src={`${API}/support-team/photo/${supportTeam.slug}`}
+            alt={supportTeam.title}
             style={{ width: 'auto', height: '200px' }}
           />
-          <h4>{staff.name}</h4>
+          <h4>{supportTeam.name}</h4>
           <button
             className="btn btn-sm btn-danger mb-3"
-            onClick={() => deleteConfirm(staff.slug)}
+            onClick={() => deleteConfirm(supportTeam.slug)}
           >
             Delete
           </button>
 
-          {showUpdateButton(staff)}
+          {showUpdateButton(supportTeam)}
         </div>
       );
     });
@@ -91,4 +90,4 @@ const ReadFieldStaff = () => {
   );
 };
 
-export default ReadFieldStaff;
+export default ReadSupportTeam;

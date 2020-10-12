@@ -1,7 +1,7 @@
-import Layout from '../../../components/Layout';
+import Layout from '../../../../components/Layout';
 import { Container } from 'reactstrap';
-import Admin from '../../../components/auth/Admin';
-import UpdateStaff from '../../../components/crud/UpdateStaff';
+import Admin from '../../../../components/auth/Admin';
+import UpdateSupportTeam from '../../../../components/crud/UpdateSupportTeam';
 
 const Staff = () => {
   return (
@@ -11,10 +11,10 @@ const Staff = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-12 pt-5 pb-5">
-                <h2>Update Staff</h2>
+                <h2>Update Support Team</h2>
               </div>
               <div className="col-md-12">
-                <UpdateStaff />
+                <UpdateSupportTeam />
               </div>
             </div>
           </div>
