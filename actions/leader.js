@@ -50,3 +50,18 @@ export const removeLeader = (slug, token) => {
     })
     .catch((err) => console.log(err));
 };
+
+export const updateLeader = (leader, token, slug) => {
+  return fetch(`${API}/leader/${slug}`, {
+    method: 'PUT',
+    headers: {
+      Accept: 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: leader,
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};
