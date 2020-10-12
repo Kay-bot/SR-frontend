@@ -8,8 +8,6 @@ const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import { QuillModules, QuillFormats } from '../../helpers/quill';
 
 const UpdateStaff = ({ router }) => {
-  // const [staff, setStaff] = useState({});
-
   const [body, setBody] = useState('');
   const [values, setValues] = useState({
     name: '',
