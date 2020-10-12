@@ -367,7 +367,7 @@
 // HomeHeader
 .header-home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    $bg-image no-repeat center right / cover;
+    $bg-image no-repeat center / cover;
   height: 60vh;
   color: #fff;
 
@@ -393,7 +393,7 @@
 
   .header-content {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
     h1 {
       font-size: 5rem;
       font-weight: bolder;
