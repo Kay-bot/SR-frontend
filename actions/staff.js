@@ -50,3 +50,18 @@ export const removeStaff = (slug, token) => {
     })
     .catch((err) => console.log(err));
 };
+
+export const updateStaff = (staff, token, slug) => {
+  return fetch(`${API}/staff/${slug}`, {
+    method: 'PUT',
+    headers: {
+      Accept: 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: staff,
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};

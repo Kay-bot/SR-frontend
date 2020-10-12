@@ -13,25 +13,32 @@ const AdminIndex = () => {
               <div className="col-md-12 text-center">
                 <h2>Admin Dashboard</h2>
               </div>
-              <div className="col-12 py-5">
+              <div className="col-6 py-5">
                 <ul className="list-group">
                   <li className="list-group-item">
-                    <a href="/admin/crud/leader">Add New Leader</a>
+                    <Link href="/admin/crud/leader">
+                      <a>Add New Leader</a>
+                    </Link>
                   </li>
                   <li className="list-group-item">
-                    <a href="/admin/crud/staff">Add New Onsite Staff</a>
+                    <Link href="/admin/crud/staff">
+                      <a>Add New Field Staff</a>
+                    </Link>
                   </li>
 
                   <li className="list-group-item">
-                    <a href="/admin/crud/supportTeam">Add New Support Staff</a>
-                  </li>
-
-                  <li className="list-group-item">
-                    <Link href="/admin/crud/staffs">
-                      <a>Update/Delete Staffs</a>
+                    <Link href="/admin/crud/supportTeam">
+                      <a>Add New Support Staff</a>
                     </Link>
                   </li>
                 </ul>
+              </div>
+              <div className="col-6 py-5">
+                <li className="list-group-item">
+                  <Link href="/admin/crud/manage-field-staff">
+                    <a>Update/Delete Field Staff</a>
+                  </Link>
+                </li>
               </div>
             </div>
           </div>
