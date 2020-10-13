@@ -1,10 +1,10 @@
 import Layout from '../../components/Layout';
-import Leadership from '../../components/Leadership';
+import OurTeamComponent from '../../components/OurTeamComponent';
 
 const OurTeam = () => {
   return (
     <Layout>
-      <Leadership />
+      <OurTeamComponent />
     </Layout>
   );
 };
