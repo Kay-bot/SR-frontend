@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import OurTeamTemp from '../components/OurTeamTemp';
+import OurTeamComponent from '../components/OurTeamComponent';
 import WhyUs from '../components/WhyUs';
 import HomeHeader from '../components/HomeHeader';
 import CompliancePartners from '../components/CompliancePartners';
@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <Layout>
       <HomeHeader />
-      <OurTeamTemp />
+      <OurTeamComponent />
       <WhyUs />
       <CompliancePartners />
     </Layout>
