@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
+import { handleResponse } from './auth';
 
 export const createLeader = (leader, token) => {
   return fetch(`${API}/leader`, {
@@ -11,6 +12,7 @@ export const createLeader = (leader, token) => {
     body: leader,
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -46,6 +48,7 @@ export const removeLeader = (slug, token) => {
     },
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -61,6 +64,7 @@ export const updateLeader = (leader, token, slug) => {
     body: leader,
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));

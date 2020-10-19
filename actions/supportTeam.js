@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
+import { handleResponse } from './auth';
 
 export const createStaff = (supportTeam, token) => {
   return fetch(`${API}/support-team`, {
@@ -11,6 +12,7 @@ export const createStaff = (supportTeam, token) => {
     body: supportTeam,
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -46,6 +48,7 @@ export const removeStaff = (slug, token) => {
     },
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -61,6 +64,7 @@ export const updateStaff = (supportTeam, token, slug) => {
     body: supportTeam,
   })
     .then((response) => {
+      handleResponse(response);
       return response.json();
     })
     .catch((err) => console.log(err));

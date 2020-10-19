@@ -57,7 +57,7 @@ const SigninComponent = () => {
   const signinForm = () => {
     return (
       <section className="my-5">
-        <div className={classnames('card px-5 py-5 bg-light', styles.box)}>
+        <div className={classnames('card px-5 py-5 bg-light')}>
           <h2 className="section-title">Sign In</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
