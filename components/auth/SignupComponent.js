@@ -1,18 +1,19 @@
 import { useState, useEffect } from 'react';
-import { signup, isAuth } from '../../actions/auth';
+import { preSignup, isAuth } from '../../actions/auth';
 
 const SignupComponent = () => {
   const [values, setValues] = useState({
     name: '',
     email: '',
     password: '',
-    error: '',
+    error: false,
+    success: false,
     loading: false,
-    message: '',
+    sent: false,
     showForm: true,
   });
 
-  const { name, email, password, error, loading, message, showForm } = values;
+  const { name, email, password, error, loading, success, showForm } = values;
 
   useEffect(() => {
     isAuth() && Router.push('/');
@@ -20,11 +21,16 @@ const SignupComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.table({ name, email, password, error, loading, message, showForm });
-    setValues({ ...values, error: false, [name]: e.target.value });
+
+    setValues({
+      ...values,
+      error: false,
+      [name]: e.target.value,
+      loading: true,
+    });
     const user = { name, email, password };
 
-    signup(user).then((data) => {
+    preSignup(user).then((data) => {
       if (data.error) {
         setValues({ ...values, error: data.error, loading: false });
       } else {
@@ -34,8 +40,9 @@ const SignupComponent = () => {
           email: '',
           password: '',
           error: '',
+          sent: true,
           loading: false,
-          message: data.message,
+          success: data.success,
           showForm: false,
         });
       }
@@ -51,7 +58,14 @@ const SignupComponent = () => {
   const showError = () =>
     error ? <div className="alert alert-danger">{error}</div> : '';
   const showMessage = () =>
-    message ? <div className="alert alert-info">{message}</div> : '';
+    success ? (
+      <div className="alert alert-info">
+        Account activation link has been sent to your email. Follow the
+        instructions to activate your account.
+      </div>
+    ) : (
+      ''
+    );
 
   const signupForm = () => {
     return (
@@ -98,9 +112,12 @@ const SignupComponent = () => {
   };
   return (
     <React.Fragment>
-      {showError()}
-      {showLoading()}
-      {showMessage()}
+      <div className="pt-4">
+        {showError()}
+        {showLoading()}
+        {showMessage()}
+      </div>
+
       {showForm && signupForm()}
     </React.Fragment>
   );
