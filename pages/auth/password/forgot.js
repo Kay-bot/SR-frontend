@@ -11,7 +11,7 @@ const ForgotPassword = () => {
     error: false,
   });
 
-  const { email, message, showForm, success, error } = values;
+  const { email, showForm, success, error } = values;
 
   const handleChange = (name) => (e) => {
     setValues({ ...values, message: '', error: '', [name]: e.target.value });
