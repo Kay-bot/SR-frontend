@@ -9,17 +9,15 @@ const ForgotPassword = () => {
     showForm: true,
     success: false,
     error: false,
+    sent: false,
+    buttonText: 'Reset password',
   });
 
-  const { email, showForm, success, error } = values;
-
-  const handleChange = (name) => (e) => {
-    setValues({ ...values, message: '', error: '', [name]: e.target.value });
-  };
+  const { email, showForm, success, error, buttonText } = values;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setValues({ ...values, message: '', error: '' });
+    setValues({ ...values, message: '', error: '', buttonText: 'Sending...' });
     forgotPassword({ email }).then((data) => {
       if (data.error) {
         setValues({ ...values, error: data.error });
@@ -28,12 +26,19 @@ const ForgotPassword = () => {
           ...values,
           message: '',
           email: '',
+          sent: true,
+          buttonText: 'Sent',
           showForm: false,
           success: data.success,
         });
       }
     });
   };
+
+  const handleChange = (name) => (e) => {
+    setValues({ ...values, message: '', error: '', [name]: e.target.value });
+  };
+
   const showError = () =>
     error ? <div className="alert alert-danger">{error}</div> : '';
   const showMessage = () =>
@@ -59,7 +64,7 @@ const ForgotPassword = () => {
         />
       </div>
       <div>
-        <button className="btn btn-primary">Reset Password</button>
+        <button className="btn btn-primary">{buttonText}</button>
       </div>
     </form>
   );

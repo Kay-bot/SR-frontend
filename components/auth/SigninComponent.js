@@ -82,7 +82,7 @@ const SigninComponent = () => {
             </div>
           </form>
           <Link href="/auth/password/forgot">
-            <a className="text-mute">Reset Passward</a>
+            <a className="text-mute">Forgot passward</a>
           </Link>
         </div>
       </section>
