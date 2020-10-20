@@ -6,11 +6,12 @@ const ForgotPassword = () => {
   const [values, setValues] = useState({
     email: '',
     message: '',
-    error: '',
     showForm: true,
+    success: false,
+    error: false,
   });
 
-  const { email, message, error, showForm } = values;
+  const { email, message, showForm, success, error } = values;
 
   const handleChange = (name) => (e) => {
     setValues({ ...values, message: '', error: '', [name]: e.target.value });
@@ -25,9 +26,10 @@ const ForgotPassword = () => {
       } else {
         setValues({
           ...values,
-          message: data.message,
+          message: '',
           email: '',
           showForm: false,
+          success: data.success,
         });
       }
     });
@@ -35,7 +37,14 @@ const ForgotPassword = () => {
   const showError = () =>
     error ? <div className="alert alert-danger">{error}</div> : '';
   const showMessage = () =>
-    message ? <div className="alert alert-success">{message}</div> : '';
+    success ? (
+      <div className="alert alert-success">
+        Email has been sent to your email. Follow the instructions to reset your
+        password. Link expires in 10min.
+      </div>
+    ) : (
+      ''
+    );
 
   const passwordForgotForm = () => (
     <form onSubmit={handleSubmit}>
