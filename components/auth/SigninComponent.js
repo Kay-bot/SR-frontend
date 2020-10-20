@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Router from 'next/router';
+import Link from 'next/link';
 import { signin, authenticate, isAuth } from '../../actions/auth';
 
 const SigninComponent = () => {
@@ -80,6 +81,9 @@ const SigninComponent = () => {
               <button className="btn btn-primary">Submit</button>
             </div>
           </form>
+          <Link href="/auth/password/forgot">
+            <a className="text-mute">Reset Passward</a>
+          </Link>
         </div>
       </section>
     );

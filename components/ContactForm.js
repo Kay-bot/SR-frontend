@@ -103,7 +103,7 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
-            <div>
+            <div className="text-center">
               <button className="btn btn-primary">{buttonText}</button>
             </div>
           </form>
