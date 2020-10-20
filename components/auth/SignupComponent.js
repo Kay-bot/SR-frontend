@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { signup, isAuth } from '../../actions/auth';
-import styles from '../../components/Main.module.scss';
-import classnames from 'classnames';
 
 const SignupComponent = () => {
   const [values, setValues] = useState({
@@ -58,7 +56,7 @@ const SignupComponent = () => {
   const signupForm = () => {
     return (
       <section className="my-5">
-        <div className={classnames('card px-5 py-5 bg-light')}>
+        <div className="card px-5 py-5 bg-light">
           <div>
             <h2 className="section-title">Sign Up</h2>
           </div>

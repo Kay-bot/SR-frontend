@@ -2,21 +2,15 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import { APP_NAME } from '../config';
 import { signout, isAuth } from '../actions/auth';
 
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import classnames from 'classnames';
 import styles from './Main.module.scss';
@@ -176,7 +170,7 @@ const Header = (props) => {
               </Link>
             </NavItem>
             {/* <NavItem className={classnames('text-center', styles.navLink)}>
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <NavLink>Contact Us</NavLink>
               </Link>
             </NavItem> */}
