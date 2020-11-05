@@ -46,7 +46,7 @@ const Header = (props) => {
           </div>
           <div>
             <a href="tel:0294363006">
-              <p>02 9436 3006</p>
+              <b>02 9436 3006</b>
             </a>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Header = (props) => {
           </div>
           <div>
             <a href="mailto:service@strataroofing.com.au">
-              <p>Service@strataroofing.com.au</p>
+              <b>Service@strataroofing.com.au</b>
             </a>
           </div>
         </div>
@@ -64,11 +64,11 @@ const Header = (props) => {
           <div>
             <img
               className={classnames(styles.img)}
-              src="/images/sydney-map.png"
+              src="/images/trademan.png"
             />
           </div>
           <div>
-            <p>Servicing all of metro Sydney - Everyday</p>
+            <b>Servicing all of metro Sydney - Everyday</b>
           </div>
         </div>
       </div>
@@ -104,18 +104,12 @@ const Header = (props) => {
       </div>
 
       <Navbar
-        className={classnames('mx-auto', styles['border-bottom'])}
+        className={classnames('mx-auto py-4', styles['border-bottom'])}
         color="#fff"
         light
         expand="md"
       >
-        {/* <Link href="/">
-          <NavbarBrand className={classnames('navbar-brand', styles.brand)}>
-            <img alt="Strata Roofing" src="/images/logo.png" />
-            <span>{APP_NAME}</span>
-          </NavbarBrand>
-        </Link> */}
-        <NavbarToggler onClick={toggle} />
+        {/* <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mx-auto" navbar>
             <NavItem className={classnames('text-center', styles.navLink)}>
@@ -128,37 +122,7 @@ const Header = (props) => {
                 <NavLink>Our Services</NavLink>
               </Link>
             </NavItem>
-            {/* <UncontrolledDropdown
-              className={classnames('text-center', styles.navLink)}
-              nav
-              inNavbar
-            >
-              <DropdownToggle nav caret>
-                Our Services
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  <Link href="/our-services">
-                    <NavLink> Option 1</NavLink>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link href="/our-services">
-                    <NavLink> Option 2</NavLink>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link href="/our-services">
-                    <NavLink>Option 3</NavLink>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link href="/our-services">
-                    <NavLink>Option 4</NavLink>
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
+
             <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/preventative-maintenance">
                 <NavLink>Preventative Maintenance</NavLink>
@@ -168,13 +132,13 @@ const Header = (props) => {
               <Link href="/gallery">
                 <NavLink>Gallery</NavLink>
               </Link>
-            </NavItem>
-            {/* <NavItem className={classnames('text-center', styles.navLink)}>
+            </NavItem> */}
+        {/* <NavItem className={classnames('text-center', styles.navLink)}>
               <Link href="/contact-us">
                 <NavLink>Contact Us</NavLink>
               </Link>
             </NavItem> */}
-            {/* {!isAuth() && (
+        {/* {!isAuth() && (
               <React.Fragment>
                 <NavItem className={classnames('text-center', styles.navLink)}>
                   <Link href="/signin">
@@ -188,7 +152,7 @@ const Header = (props) => {
                 </NavItem>
               </React.Fragment>
             )} */}
-            {/* {isAuth() && (
+        {/* {isAuth() && (
               <NavItem className={classnames('text-center', styles.navLink)}>
                 <NavLink
                   onClick={() => signout(() => Router.replace('/signin'))}
@@ -198,26 +162,26 @@ const Header = (props) => {
               </NavItem>
             )} */}
 
-            {isAuth() && isAuth().role === 1 && (
-              <NavItem className={classnames('text-center', styles.navLink)}>
-                <Link href="/admin">
-                  <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
-                </Link>
-              </NavItem>
-            )}
+        {isAuth() && isAuth().role === 1 && (
+          <NavItem className={classnames('text-center', styles.navLink)}>
+            <Link href="/admin">
+              <NavLink>{`${isAuth().name}'s Dashboard`}</NavLink>
+            </Link>
+          </NavItem>
+        )}
 
-            {isAuth() && (
-              <NavItem className={classnames('text-center', styles.navLink)}>
-                <NavLink
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => signout(() => Router.replace(`/signin`))}
-                >
-                  Signout
-                </NavLink>
-              </NavItem>
-            )}
-          </Nav>
-        </Collapse>
+        {isAuth() && (
+          <NavItem className={classnames('text-center', styles.navLink)}>
+            <NavLink
+              style={{ cursor: 'pointer' }}
+              onClick={() => signout(() => Router.replace(`/signin`))}
+            >
+              Signout
+            </NavLink>
+          </NavItem>
+        )}
+        {/* </Nav>
+        </Collapse> */}
       </Navbar>
     </div>
   );

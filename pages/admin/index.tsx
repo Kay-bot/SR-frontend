@@ -31,6 +31,12 @@ const AdminIndex = () => {
                       <a>Add New Support Staff</a>
                     </Link>
                   </li>
+
+                  <li className="list-group-item">
+                    <Link href="/admin/crud/feature">
+                      <a>Add New Feature</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="col-6 py-5">
@@ -47,6 +53,11 @@ const AdminIndex = () => {
                 <li className="list-group-item">
                   <Link href="/admin/crud/manage-leader">
                     <a>Update/Delete Leadership</a>
+                  </Link>
+                </li>
+                <li className="list-group-item">
+                  <Link href="/admin/crud/manage-feature">
+                    <a>Update/Delete Feature</a>
                   </Link>
                 </li>
               </div>
