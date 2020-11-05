@@ -6,48 +6,45 @@ const Footer = (props) => {
     <div className={classnames('py-3', styles.footer)}>
       <div className="row mx-3">
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h4>Why use Strata Roofing?</h4>
+          <h4>Why should you use Strata Roofing?</h4>
           <hr></hr>
 
           <p>
-            <i className="fas fa-check"></i> We are the ONLY roofing contractor
-            in Sydney, that only serves the strata sector (as our name confirms)
-            we don’t work in other sectors!{' '}
-            <b>that makes us the real strata specialists.</b>
-          </p>
-          <p>
-            <i className="fas fa-check"></i> Arguably the{' '}
-            <b>highest quality roofing reports in Sydney</b> (free to regular
-            strata managers)
-          </p>
-          <p>
-            <i className="fas fa-check"></i>
             <b>
-              An admin / office support team, of highly qualified and
-              experienced personal,
+              We are the ONLY roofing contractor in Sydney that exclusively
+              serves the strata sector.
             </b>{' '}
-            that is unmatched by others, serving our sector, professionalism is
-            our policy cornerstone.
+            We don’t work in other sectors, that makes us the real strata
+            specialists.
           </p>
           <p>
-            <i className="fas fa-check"></i> A well-crafted system in place,
-            that strives to deliver a <b>quality product in reasonable time.</b>
+            <b>Arguably the highest quality roofing reports in Sydney </b> (free
+            to regular strata managers).
           </p>
           <p>
-            <i className="fas fa-check"></i>{' '}
-            <b>Strict quality control enforced</b> by a mature aged, highly
-            experienced senior management team, with more experience at the coal
-            face, than you could ever wish for.
+            <b>Our highly qualified and experienced admin support team</b> is at
+            your service to deliver an exceptional customer service experience,
+            unmatched by others in our sector. Professionalism is our policy
+            cornerstone.
           </p>
           <p>
-            <i className="fas fa-check"></i>{' '}
+            <b>A well-crafted system </b>in place that strives to deliver a
+            quality service to you, in reasonable time.
+          </p>
+
+          <p>
             <b>
-              High quality completed job reports, with sufficient clear
-              photographs of the completed works,
+              Strict quality control enforced by mature, highly experienced
+              senior management team,
             </b>{' '}
-            that gives strata committee’s complete confidence with authorising
-            invoice payments. These reports are also very helpful in the
-            unlikely event of a warranty claim.
+            with many decades of relevant, strata managed property experience.
+          </p>
+
+          <p>
+            <b>High quality completed job reports, with clear photographs </b>{' '}
+            of the completed works, to give strata committees complete
+            confidence when authorizing invoice payments. These reports are also
+            very helpful in the unlikely event of a warranty claim.
           </p>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
