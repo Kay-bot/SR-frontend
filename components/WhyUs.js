@@ -30,7 +30,7 @@ const OurFeatures = () => {
   const showAllFeature = () => {
     return data.map((feature, index) => {
       return (
-        <div key={index}>
+        <div className={classnames(styles['flex-container'])} key={index}>
           <h4>{feature.title}</h4>
           <div>{renderHTML(feature.body)}</div>
         </div>

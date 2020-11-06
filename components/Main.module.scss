@@ -256,88 +256,124 @@
 
 // Why Us
 .features {
-  border: 2px #4dd314 solid;
   margin-top: 2rem;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  div {
-    padding: 2rem;
-    h3 {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border: $main-color 1px solid;
+  @include md {
+    display: block;
+  }
+  @include sm {
+   display:block;
+  }
+  @include xs {
+    display:block;
+  }
+  
+}
+
+.flex-container {
+    width: 33%;
+    height: auto;
+    font-size: 1rem;
+    border: $main-color 1px solid;
+    padding: 1rem;
+    flex-grow: 1;
+    @include md {
+      width: 100%;
+    }
+    @include sm {
+     width: 100%;
+    }
+    @include xs {
+      width: 100%;
+    }
+    h4 {
       color: $primary-color;
       font-weight: bold;
     }
     p {
       text-align: left;
     }
-    b {
-      font-weight: bolder;
+    strong {
+      color: #000000;
+      font-weight: extra-bold 800;
+      font-size: 1.2rem;
     }
-    u {
-      font-weight: bold;
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      list-style: none;
+      strong {
+        color: $primary-color;
+       } 
+       li {
+        padding-left: 2rem;
+      }
+       li:before {
+        content: "•"; 
+        padding-right: 8px;
+        color: $primary-color
+      }
+       
     }
-    span {
+
+    ol {
+      padding: 2rem;
+      text-align: left;
       color: $primary-color;
+      strong {
+        color: $primary-color;
+       } 
+       li {
+        padding-left: 0;
+        color: #000000;
+        list-style: none;
+      }
+      
+     }
+  }
+
+.flex-container:nth-of-type(4), .flex-container:nth-of-type(5) {
+    flex-grow: 2;
+    background-color: $main-color;
+    color: set-text-color($main-color);
+    @include md {
+      width: 100%;
+    }
+    @include sm {
+     width: 100%;
+    }
+    @include xs {
+      width: 100%;
+    }
+    h4 {
+      color: #fff;
       font-weight: bold;
     }
-    i {
-      color: #4dd314;
+    p {
+      text-align: left;
     }
-  }
-  @include md {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @include sm {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @include xs {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .icon-color {
-    color: $main-color;
-    padding-bottom: 0.4rem;
-  }
-  a {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-    &:hover {
-      background-color: $main-color;
+    strong {
+      color: #fff;
+      font-weight: extra-bold 800;
+      font-size: 1.1rem;
     }
+   
+    ol {
+      padding: 2rem;
+      text-align: left;
+      color: #fff;
+       li {
+        padding-left: 0;
+        list-style: none;
+        color: #fff;
+      }
+     }
   }
-}
 
-// Contact
-// .text-fields {
-//   display: grid;
-//   grid-template-areas:
-//     'name email'
-//     'subject phone'
-//     'message message';
-//   grid-gap: 1.2rem;
-//   margin-bottom: 1.2rem;
-
-//   // Grid Areas
-//   .name-input {
-//     grid-area: name;
-//   }
-//   .subject-input {
-//     grid-area: subject;
-//   }
-//   .email-input {
-//     grid-area: email;
-//   }
-//   .phone-input {
-//     grid-area: phone;
-//   }
-//   .message-input {
-//     grid-area: message;
-//     height: 150px;
-//   }
-//   .text-input {
-//     padding: 0.5rem 1rem;
-//   }
-// }
 
 // Footer
 .footer {
@@ -511,11 +547,19 @@
   padding: 1rem;
   text-align: center;
   h4 {
+    padding-top: 1rem;
     color: $dark-color;
     font-weight: bold;
   }
   b {
     color: $main-color;
+    font-weight: extra-bold 800;
+    font-size: 1.2rem;
+  }
+  strong {
+    color: #000000;
+    font-weight: extra-bold 800;
+    font-size: 1.1rem;
   }
   img {
     width: 100%;
@@ -537,9 +581,6 @@
   div {
     width: 380px;
     height: auto;
-    span {
-      font-weight: bold;
-    }
     p {
       text-align: left;
     }
@@ -548,18 +589,12 @@
     div {
       width: 280px;
       height: auto;
-      span {
-        font-weight: bold;
-      }
     }
   }
   @include sm {
     div {
       width: 300px;
       height: auto;
-      span {
-        font-weight: bold;
-      }
     }
   }
   @include xs {
