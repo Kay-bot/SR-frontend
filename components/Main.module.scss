@@ -593,16 +593,17 @@
   }
   @include sm {
     div {
-      width: 300px;
-      height: auto;
+      width: 100%;
+      p {
+        text-align: justify;
+      }
     }
   }
   @include xs {
     div {
-      width: 300px;
-      height: auto;
-      span {
-        font-weight: bold;
+      width: 100%;
+      p {
+        text-align: justify
       }
     }
   }
