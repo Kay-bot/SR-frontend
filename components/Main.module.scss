@@ -44,7 +44,7 @@
     }
     .img {
       width: 35px;
-      height: auto;
+     height: 35px;
     }
   }
 
@@ -256,12 +256,12 @@
 
 // Why Us
 .features {
+  border: 2px #4dd314 solid;
   margin-top: 2rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   div {
-    border: 2px #4dd314 solid;
     padding: 2rem;
     h3 {
       color: $primary-color;
