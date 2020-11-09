@@ -51,7 +51,7 @@ const Footer = (props) => {
           <h4>Our Location</h4>
           <hr></hr>
           <p>
-            <i className="fas fa-map-marker-alt"></i> 4.02, 44 Hampden road,
+            <i className="fas fa-map-marker-alt"></i> 4.02, 44 Hampden Road,
             Artarmon 2064, NSW , Sydney.
           </p>
           <p>

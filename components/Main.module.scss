@@ -595,7 +595,7 @@
     div {
       width: 100%;
       p {
-        text-align: justify;
+        text-align: left;
       }
     }
   }
@@ -603,7 +603,7 @@
     div {
       width: 100%;
       p {
-        text-align: justify
+        text-align: left
       }
     }
   }
@@ -628,6 +628,10 @@
     width: 220px;
     height: auto;
     filter: contrast(120%);
+  }
+  .mba {
+    width: 340px;
+    height: auto;
   }
   .img {
     text-align: center;

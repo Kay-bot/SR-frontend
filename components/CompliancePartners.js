@@ -10,7 +10,11 @@ const CompliancePartners = () => {
         <div className={classnames(styles['compliance-logos'])}>
           <img src="/members/EBIX.png" alt="" />
           <img src="/members/HBCF.png" alt="" />
-          <img src="/members/MBA.png" alt="" />
+          <img
+            className={classnames(styles.mba)}
+            src="/members/MBA.png"
+            alt=""
+          />
           <img src="/members/NSW-fair-trading.png" alt="" />
           <img
             className={classnames(styles.img)}
